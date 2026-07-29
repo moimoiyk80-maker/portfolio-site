@@ -1,0 +1,27 @@
+public/images/sli/
+├─ product-search.png
+├─ product-detail.png
+└─ product-inquiry.png
+
+product-search.png
+→ 제품 목록과 검색·필터가 보이는 화면
+
+product-detail.png
+→ Biological Safety Cabinet 제품 상세 화면
+
+product-inquiry.png
+→ 선택한 제품 정보가 포함된 문의 화면
+
+sli
+final-home.png
+final-products.png
+final-category.png
+final-resources.png
+
+responsive-desktop.png
+responsive-tablet.png
+responsive-mobile.png
+
+cover.png",
+      heroDesktop: "/images/minimal/hero-desktop.png",
+      heroMobile: "/images/minimal/hero-mobile.png",
