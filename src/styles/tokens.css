@@ -1,0 +1,24 @@
+:root {
+    --color-bg: #fafaf9;
+    --color-surface: #ffffff;
+    --color-surface-subtle: #f2f1ee;
+  
+    --color-text-primary: #15171a;
+    --color-text-secondary: #626870;
+    --color-text-inverse: #ffffff;
+  
+    --color-border: #ddded9;
+  
+    --color-accent: #25272b;
+    --color-accent-hover: #111315;
+  
+    --color-project-sli: #244a73;
+    --color-project-frame: #5b5e8a;
+    --color-project-minimal: #5d6b63;
+  
+    --container-width: 1200px;
+  
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+  }
