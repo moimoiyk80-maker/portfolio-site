@@ -6,6 +6,7 @@ function ProjectGallery({
   description,
   images = [],
   accent = "sli",
+  wideFirst = true,
 }) {
   return (
     <section
@@ -31,7 +32,7 @@ function ProjectGallery({
             <figure
               className={[
                 "project-gallery__item",
-                index === 0
+                image.wide || (wideFirst && index === 0)
                   ? "project-gallery__item--wide"
                   : "",
               ]

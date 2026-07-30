@@ -442,11 +442,36 @@
   margin-top: 96px;
 }
 
+.project-key-ux--frame {
+  background: #f7f6fa;
+}
+
+.project-key-ux--frame-application {
+  background: var(--color-surface);
+}
+
+.project-key-ux--minimal {
+  background: #f4f6f4;
+}
+
 .image-feature {
+  --feature-accent: var(--color-accent);
   display: grid;
   grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
   gap: 80px;
   align-items: center;
+}
+
+.image-feature--sli {
+  --feature-accent: var(--color-project-sli);
+}
+
+.image-feature--frame {
+  --feature-accent: var(--color-project-frame);
+}
+
+.image-feature--minimal {
+  --feature-accent: var(--color-project-minimal);
 }
 
 .image-feature--reverse {
@@ -463,13 +488,13 @@
 
 .image-feature__number {
   margin-bottom: 24px;
-  color: var(--color-project-sli);
+  color: var(--feature-accent);
   font-size: 14px;
   font-weight: 700;
 }
 
 .image-feature__eyebrow {
-  color: var(--color-project-sli);
+  color: var(--feature-accent);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -513,7 +538,7 @@
   left: 0;
   width: 5px;
   height: 5px;
-  background: var(--color-project-sli);
+  background: var(--feature-accent);
   border-radius: 50%;
 }
 
@@ -527,6 +552,11 @@
 .image-feature__visual img {
   width: 100%;
   height: auto;
+}
+
+.image-feature__visual .image-feature__image--mobile {
+  width: min(100%, 420px);
+  margin-inline: auto;
 }
 
 /* Final UI Gallery */
@@ -1053,6 +1083,7 @@
   
     .project-hero__info div:first-child {
       grid-column: 1 / -1;
+      max-width: 360px;
     }
   
     .project-hero__links {

@@ -1,22 +1,25 @@
 function ImageFeature({
-    number,
-    eyebrow,
-    title,
-    description,
-    points = [],
-    image,
-    imageAlt,
-    reverse = false,
-  }) {
-    return (
-      <article
-        className={[
-          "image-feature",
-          reverse ? "image-feature--reverse" : "",
-        ]
-          .filter(Boolean)
-          .join(" ")}
-      >
+  number,
+  eyebrow,
+  title,
+  description,
+  points = [],
+  image,
+  imageAlt,
+  reverse = false,
+  accent = "sli",
+  imageClass = "",
+}) {
+  return (
+    <article
+      className={[
+        "image-feature",
+        `image-feature--${accent}`,
+        reverse ? "image-feature--reverse" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
+    >
         <div className="image-feature__content">
           <p className="image-feature__number">{number}</p>
   
@@ -38,7 +41,12 @@ function ImageFeature({
         </div>
   
         <div className="image-feature__visual">
-          <img src={image} alt={imageAlt} loading="lazy" />
+          <img
+            className={imageClass}
+            src={image}
+            alt={imageAlt}
+            loading="lazy"
+          />
         </div>
       </article>
     );

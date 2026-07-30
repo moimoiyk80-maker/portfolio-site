@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Container from "../common/Container";
 
 function ProjectClosing({
+  title = "설계부터 React UI 구현까지 전체 과정을 진행했습니다.",
+  description = "문제 정의와 화면 설계, 구현을 하나의 흐름으로 연결했습니다.",
   roleItems = [],
   tools = [],
   outcome,
@@ -21,14 +23,11 @@ function ProjectClosing({
             <p className="project-section__eyebrow">Role & Outcome</p>
 
             <div>
-              <h2 className="project-section__title">
-                설계부터 React UI 구현까지 전체 과정을 진행했습니다.
-              </h2>
+            <h2 className="project-section__title">{title}</h2>
 
-              <p className="project-section__description">
-                문제 정의와 정보구조, 화면 설계, 반응형 구현을 하나의
-                흐름으로 연결했습니다.
-              </p>
+            <p className="project-section__description">
+              {description}
+            </p>
             </div>
           </div>
 
