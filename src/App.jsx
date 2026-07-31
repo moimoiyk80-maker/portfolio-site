@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/common/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import SliProjectPage from "./pages/SliProjectPage";
 import FrameProjectPage from "./pages/FrameProjectPage";
@@ -8,6 +9,8 @@ import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route
