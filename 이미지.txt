@@ -48,7 +48,7 @@ theme-dark.png
 component-states.png
 → Default, Hover, Focus, Error, Disabled 상태
 
-design-to-code.png
+design-to-code.png ??
 application-sli.png
 **design-to-code.png
 → Figma 기준과 React UI가 연결되는 화면
