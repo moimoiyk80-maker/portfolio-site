@@ -7,10 +7,17 @@ function ProjectGallery({
   images = [],
   accent = "sli",
   wideFirst = true,
+  className = "",
 }) {
   return (
     <section
-      className={`project-gallery project-gallery--${accent}`}
+      className={[
+        "project-gallery",
+        `project-gallery--${accent}`,
+        className,
+      ]
+        .filter(Boolean)
+        .join(" ")}
     >
       <Container>
         <div className="project-gallery__header">

@@ -226,6 +226,28 @@ function SliProjectPage() {
     url: "/projects/frame-design-system",
   };
 
+  const processImages = [
+    {
+      src: "/images/sli/process-low-fi.png",
+      alt: "SLI Scientific 홈, 카테고리와 제품 상세 로우파이 와이어프레임",
+      caption:
+        "Low-fi · 홈에서 제품군을 탐색하고 카테고리와 제품 상세로 이어지는 핵심 구조를 한 화면에서 검토했습니다.",
+      wide: true,
+    },
+    {
+      src: "/images/sli/process-mid-home.png",
+      alt: "SLI Scientific 홈 미드파이 와이어프레임",
+      caption:
+        "Mid-fi Home · 제품 탐색을 중심으로 첫 화면의 콘텐츠 우선순위를 구체화했습니다.",
+    },
+    {
+      src: "/images/sli/process-mid-categorydetail.png",
+      alt: "SLI Scientific 카테고리 미드파이 와이어프레임",
+      caption:
+        "Mid-fi Category · 제품군과 하위 카테고리의 탐색 구조를 구체화했습니다.",
+    },
+  ];
+
   return (
     <PageLayout>
       <ProjectHero project={project} />
@@ -242,6 +264,16 @@ function SliProjectPage() {
         description="기존 유형의 연구장비 사이트를 분석해 제품 탐색과 기술 검토를 방해하는 핵심 문제를 세 가지로 정리했습니다."
         items={problems}
         accent="sli"
+      />
+
+      <ProjectGallery
+        eyebrow="Design Process"
+        title="전체 탐색 구조를 먼저 확인하고, 주요 화면의 정보 위계를 단계적으로 구체화했습니다."
+        description="로우파이에서는 홈에서 제품군, 카테고리와 제품 상세로 이어지는 전체 흐름을 검토했습니다. 이후 미드파이에서는 각 화면의 콘텐츠 우선순위와 기능 배치를 구체화했습니다."
+        images={processImages}
+        accent="sli"
+        wideFirst={false}
+        className="project-gallery--process"
       />
 
       <ProcessFlow
