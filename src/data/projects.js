@@ -17,7 +17,7 @@ export const projects = [
     heroDesktop: "/images/sli/hero-desktop.png",
     heroMobile: "/images/sli/hero-mobile.png",
     projectUrl: "/projects/sli-scientific",
-    liveUrl: "실제 Vercel 주소",
+    liveUrl: "https://platform-redesign-five.vercel.app/",
     githubUrl:
       "https://github.com/moimoiyk80-maker/platform-redesign",
   },
@@ -40,7 +40,7 @@ export const projects = [
     heroDesktop: "/images/frame/hero-desktop.png",
     heroMobile: "/images/frame/hero-mobile.png",
     projectUrl: "/projects/frame-design-system",
-    liveUrl: "실제 Frame Vercel 주소",
+    liveUrl: "http://frame-design-system.vercel.app/",
     githubUrl:
       "https://github.com/moimoiyk80-maker/frame-design-system",
   },
@@ -63,7 +63,7 @@ export const projects = [
     heroDesktop: "/images/minimal/hero-desktop.png",
     heroMobile: "/images/minimal/hero-mobile.png",
     projectUrl: "/projects/minimal-ecommerce",
-    liveUrl: "실제 Minimal Vercel 주소",
+    liveUrl: "http://minimal-ecommerce-psi.vercel.app",
     githubUrl:
       "https://github.com/moimoiyk80-maker/minimal-ecommerce",
   },

@@ -179,12 +179,7 @@ function MinimalProjectPage() {
       src: "/images/minimal/final-filtered.png",
       alt: "Minimal Ecommerce 필터와 정렬 적용 화면",
       caption: "Filtered Result · 조건 적용 결과",
-    },
-    {
-      src: "/images/minimal/final-modal.png",
-      alt: "Minimal Ecommerce 상품 상세 모달",
-      caption: "Product Detail · 상세 정보 확인",
-    },
+    },    
     {
       src: "/images/minimal/final-empty.png",
       alt: "Minimal Ecommerce 검색 결과 없음 화면",
