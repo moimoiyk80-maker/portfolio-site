@@ -51,11 +51,10 @@ function Header() {
           </a>
 
           <a
-            href="/resume/resume.pdf"
+            href="/resume/hwang-yoonkyung-resume.pdf"
             className="site-header__resume"
             target="_blank"
             rel="noreferrer"
-            onClick={closeMenu}
           >
             이력서
           </a>

@@ -256,6 +256,16 @@ function HomePage() {
             </div>
 
             <div className="home-contact__actions">
+            <a
+              className="home-contact__github"
+              href="/resume/hwang-yoonkyung-resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              이력서 보기
+              <span aria-hidden="true"> ↗</span>
+            </a>
+            
               <a
                 className="home-contact__email"
                 href="mailto:hyoonkyung@naver.com"
