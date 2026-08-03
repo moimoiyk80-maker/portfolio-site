@@ -258,7 +258,7 @@ function HomePage() {
             <div className="home-contact__actions">
               <a
                 className="home-contact__email"
-                href="mailto:esperance80@naver.com"
+                href="mailto:hyoonkyung@naver.com"
               >
                 hyoonkyung@naver.com
                 <span aria-hidden="true"> ↗</span>
