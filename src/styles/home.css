@@ -251,13 +251,13 @@
   
   .project-card__image {
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     transition: transform 240ms ease;
   }
   
   .project-card__image-link:hover .project-card__image {
-    transform: scale(1.018);
+    transform: scale(2);
   }
 
   /* Capability growth */

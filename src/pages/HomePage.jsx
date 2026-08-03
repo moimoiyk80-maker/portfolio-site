@@ -260,7 +260,7 @@ function HomePage() {
                 className="home-contact__email"
                 href="mailto:esperance80@naver.com"
               >
-                esperance80@naver.com
+                hyoonkyung@naver.com
                 <span aria-hidden="true"> ↗</span>
               </a>
 
