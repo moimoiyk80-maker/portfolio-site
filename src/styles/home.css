@@ -257,7 +257,7 @@
   }
   
   .project-card__image-link:hover .project-card__image {
-    transform: scale(2);
+    transform: scale(1.018);
   }
 
   /* Capability growth */
