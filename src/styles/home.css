@@ -682,7 +682,7 @@
   
     .text-link {
       padding-inline: 4px; 
-      width: 100%;
+      align-items: center;
     }
   
     .home-placeholder {
