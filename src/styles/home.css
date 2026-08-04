@@ -681,7 +681,8 @@
     }
   
     .text-link {
-      padding-inline: 4px;
+      padding-inline: 4px; 
+      width: 100%;
     }
   
     .home-placeholder {

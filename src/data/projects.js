@@ -33,7 +33,7 @@ export const projects = [
     description:
       "컬러, 타이포그래피와 간격을 디자인 토큰으로 구조화하고, 일관된 컴포넌트와 Light·Dark Theme으로 확장했습니다.",
     role:
-      "UI Foundation · Design Tokens · Component Design · React UI",
+      "UI Foundation · Design Tokens · Component Guidelines · UI States · Theme",
     duration: "개인 프로젝트",
     year: "2026",
     accent: "frame",

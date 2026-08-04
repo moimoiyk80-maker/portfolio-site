@@ -38,17 +38,17 @@ function Header() {
           }`}
           aria-label="주요 메뉴"
         >
-          <a href="/#projects" onClick={closeMenu}>
+          <Link to="/#projects" onClick={closeMenu}>
             프로젝트
-          </a>
+          </Link>
 
-          <a href="/#about" onClick={closeMenu}>
+          <Link to="/#about" onClick={closeMenu}>
             소개
-          </a>
+          </Link>
 
-          <a href="/#contact" onClick={closeMenu}>
+          <Link to="/#contact" onClick={closeMenu}>
             연락처
-          </a>
+          </Link>
 
           {/* <a
             href="/resume/hwang-yoonkyung-resume.pdf"

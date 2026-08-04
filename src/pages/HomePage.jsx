@@ -86,8 +86,8 @@ function HomePage() {
                 </h3>
 
                 <p className="home-growth__description">
-                  상품 탐색, 필터, 정렬과 장바구니 상태를 React로 연결하고
-                  반응형 화면으로 구현했습니다.
+                 상품 탐색, 필터, 정렬과 장바구니 흐름을 설계하고
+                 반응형 환경에서 동작과 화면 결과를 검수했습니다.
                 </p>
               </div>
 
@@ -105,8 +105,8 @@ function HomePage() {
                 </h3>
 
                 <p className="home-growth__description">
-                 상품 탐색, 필터, 정렬과 장바구니 흐름을 설계하고,
-                 React 기반 환경에서 동작과 반응형 결과를 검수했습니다.
+                  반복되는 시각 기준을 디자인 토큰과 컴포넌트 상태로 정리하고,
+                  Light·Dark Theme과 UI 사용 원칙으로 확장했습니다.
                 </p>
               </div>
 
