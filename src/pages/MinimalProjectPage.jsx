@@ -23,7 +23,7 @@ function MinimalProjectPage() {
     {
       label: "Project Scope",
       value:
-        "UI Design · Product Discovery · State UI · Responsive UI · React",
+        "UI Design · Product Discovery · Interaction Planning · Responsive UI",
     },
     {
       label: "Core Flow",
@@ -36,9 +36,9 @@ function MinimalProjectPage() {
         "Modal · Filter Chips · Empty State · Bottom Sheet",
     },
     {
-      label: "Tools",
+      label: "Design & Environment",
       value:
-        "React · Vite · JavaScript · HTML · CSS",
+        "Figma · HTML/CSS · React 기반 구현 환경 · GitHub · Vercel",
     },
   ];
 
@@ -71,7 +71,7 @@ function MinimalProjectPage() {
       label: "Refine",
       title: "필터와 정렬",
       description:
-        "카테고리, 색상과 가격 정렬 조건을 조합해 원하는 상품 범위를 좁힐 수 있도록 구현했습니다.",
+        "카테고리, 색상과 가격 정렬 조건을 조합해 원하는 상품 범위를 좁힐 수 있도록 구성했습니다.",
     },
     {
       label: "Review",
@@ -83,7 +83,7 @@ function MinimalProjectPage() {
       label: "Action",
       title: "장바구니 추가",
       description:
-        "선택한 상품이 장바구니 상태에 반영되고 수량과 합계를 확인할 수 있도록 연결했습니다.",
+        "선택한 상품이 장바구니에 반영되고 수량과 합계를 확인할 수 있도록 흐름을 구성했습니다.",
     },
   ];
 
@@ -111,7 +111,7 @@ function MinimalProjectPage() {
       eyebrow: "Filter & Sort",
       title: "여러 탐색 조건이 하나의 결과 상태에 반영됩니다.",
       description:
-        "카테고리와 컬러 필터, 가격 정렬을 함께 적용하고 현재 선택된 조건을 칩과 결과 수로 확인할 수 있도록 구현했습니다.",
+        "카테고리와 컬러 필터, 가격 정렬을 함께 적용하고 현재 선택된 조건을 칩과 결과 수로 확인할 수 있도록 구성했습니다.",
       points: [
         "카테고리와 컬러 조건 조합",
         "가격 낮은순·높은순 정렬",
@@ -213,19 +213,20 @@ function MinimalProjectPage() {
 
   const roleItems = [
     "상품 탐색 흐름과 화면 구조 설계",
-    "카테고리·컬러 필터와 가격 정렬 구현",
-    "적용 조건 칩과 전체 초기화 기능 구현",
-    "상품 상세 모달과 ESC 닫기 인터랙션 구현",
-    "장바구니와 Empty State 등 상태 UI 구현",
-    "데스크톱·태블릿·모바일 반응형 UI 구현",
+    "카테고리·컬러 필터와 가격 정렬 기준 정의",
+    "적용 조건 칩과 전체 초기화 흐름 설계",
+    "상품 상세 모달과 닫기 인터랙션 기준 정의",
+    "장바구니와 Empty State 등 상태 UI 설계",
+    "데스크톱·태블릿·모바일 반응형 화면 설계",
+    "브라우저 동작 검수와 UI 수정",
   ];
   
   const projectTools = [
-    "React",
-    "Vite",
-    "JavaScript",
-    "HTML",
-    "CSS",
+    "UI 디자인",
+    "인터랙션 설계",
+    "반응형 UI",
+    "HTML/CSS",
+    "React 기반 환경",
     "GitHub",
     "Vercel",
   ];
@@ -242,8 +243,8 @@ function MinimalProjectPage() {
       <ProjectHero project={project} />
 
       <ProjectOverview
-        title="상품 탐색과 상태 변화를 하나의 React UI 흐름으로 구현했습니다."
-        description="Minimal Ecommerce는 상품 목록을 보여주는 데 그치지 않고, 필터와 정렬, 상세 보기와 장바구니 상태가 서로 연결되도록 구현한 개인 프로젝트입니다."
+        title="상품 탐색 과정과 상태 변화를 하나의 UI 흐름으로 설계했습니다."
+        description="상품 목록, 필터와 정렬, 상세 확인과 장바구니가 자연스럽게 이어지도록 화면 구조와 인터랙션을 구성한 개인 프로젝트입니다."
         details={overviewDetails}
       />
 
@@ -258,7 +259,7 @@ function MinimalProjectPage() {
       <ProcessFlow
         eyebrow="Core Flow"
         title="탐색에서 장바구니까지 상태가 이어지는 흐름을 설계했습니다."
-        description="사용자가 상품을 찾고 조건을 좁힌 뒤 상세 정보를 확인하고 장바구니에 추가하는 과정을 하나의 연결된 인터랙션으로 구현했습니다."
+        description="사용자가 상품을 찾고 조건을 좁힌 뒤 상세 정보를 확인하고 장바구니에 추가하는 과정을 하나의 연결된 인터랙션으로 설계했습니다."
         items={shoppingFlow}
         principles={interactionPrinciples}
         accent="minimal"
@@ -271,7 +272,7 @@ function MinimalProjectPage() {
 
             <div>
               <h2 className="project-section__title">
-                화면 전환보다 상태 변화가 자연스럽게 이어지도록 구현했습니다.
+                화면 전환보다 상태 변화가 자연스럽게 이어지도록 설계했습니다.
               </h2>
 
               <p className="project-section__description">
@@ -296,7 +297,7 @@ function MinimalProjectPage() {
 
       <ProjectGallery
         eyebrow="Final UI"
-        title="탐색 조건과 상태 변화가 화면에 명확히 드러나는 UI를 구현했습니다."
+        title="탐색 조건과 상태 변화가 화면에 명확히 드러나도록 구성했습니다."
         description="전체 상품 목록, 필터 결과, 상품 상세와 결과 없음 상태를 동일한 시각 기준 안에서 구성했습니다."
         images={finalUiImages}
         accent="minimal"
@@ -310,12 +311,12 @@ function MinimalProjectPage() {
       />
 
       <ProjectClosing
-        title="상품 탐색과 상태 기반 인터랙션을 React UI로 구현했습니다."
+        title="상품 탐색과 상태 기반 인터랙션을 반응형 UI로 구성했습니다."
         description="목록, 필터, 정렬, 상세 보기와 장바구니 상태를 연결하고 다양한 화면 크기에 맞춰 조작 방식을 전환했습니다."
         roleItems={roleItems}
         tools={projectTools}
-        outcome="상품 탐색 조건과 사용자 행동이 즉시 화면에 반영되는 반응형 커머스 UI를 구현했습니다."
-        reflection="이 프로젝트를 통해 React UI에서는 개별 화면보다 상태 간 관계와 사용자 행동에 따른 피드백이 중요하다는 점을 구체적으로 확인했습니다. 또한 모바일에서는 레이아웃 축소보다 조작 방식의 전환이 필요하다는 기준을 정리했습니다."
+        outcome="상품 탐색 조건과 사용자 행동이 화면에 명확히 반영되는 반응형 커머스 UI를 구성했습니다."
+        reflection="이 프로젝트를 통해 커머스 UI에서는 사용자의 선택과 그 결과가 화면에 명확하게 이어지는 것이 중요하다는 점을 확인했습니다. 또한 모바일에서는 단순히 화면을 축소하는 것이 아니라, 조작 방식과 정보 우선순위를 다시 구성해야 한다는 기준을 정리했습니다."
         liveUrl={project.liveUrl}
         githubUrl={project.githubUrl}
         nextProject={nextProject}

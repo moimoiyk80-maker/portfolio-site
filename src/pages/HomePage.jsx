@@ -11,27 +11,27 @@ function HomePage() {
         <Container>
           <div className="home-hero__content">
             <p className="home-hero__eyebrow">
-              UI/UX · 디자인 시스템 · React UI
+             UI/UX · 반응형 UI · 디자인 시스템
             </p>
 
             <h1 className="home-hero__title">
               복잡한 정보를 명확한 인터페이스로 설계하고,
               <br />
-              디자인 시스템과 React UI로 구현합니다.
+              디자인과 구현 사이의 기준을 연결합니다.
             </h1>
 
             <p className="home-hero__description">
-              18년 이상의 웹디자인, UI/UX와 반응형 퍼블리싱 경험을
-              바탕으로 디자인과 개발 사이를 연결합니다.
+             18년 이상의 인하우스 웹디자인, UI/UX와 반응형 퍼블리싱 경험을
+             바탕으로 실제 웹 환경에서 작동하는 디자인을 만들어 왔습니다.
             </p>
 
             <div className="home-hero__actions">
               <a className="button button--primary" href="#projects">
-                프로젝트 보기
+                Projects
               </a>
 
               <a className="text-link" href="#about">
-                소개 보기
+                About
                 <span aria-hidden="true"> →</span>
               </a>
             </div>
@@ -66,12 +66,11 @@ function HomePage() {
       <section className="home-growth">
         <Container>
           <div className="home-growth__header">
-            <p className="home-growth__eyebrow">Capability Growth</p>
+            <p className="home-growth__eyebrow">Professional Direction</p>
 
             <h2 className="home-growth__title">
-              구현에서 시스템 설계와
-              <br />
-              실무 UX 개선으로 확장했습니다.
+              오랜 실무 경험을
+              시스템과 구조의 관점으로 확장했습니다.
             </h2>
           </div>
 
@@ -80,10 +79,10 @@ function HomePage() {
               <div className="home-growth__number">01</div>
 
               <div className="home-growth__content">
-                <p className="home-growth__label">React UI Implementation</p>
+                <p className="home-growth__label">UI Implementation</p>
 
                 <h3 className="home-growth__item-title">
-                  상태가 연결되는 인터페이스 구현
+                  웹디자인과 HTML/CSS 기반 반응형 퍼블리싱
                 </h3>
 
                 <p className="home-growth__description">
@@ -99,15 +98,15 @@ function HomePage() {
               <div className="home-growth__number">02</div>
 
               <div className="home-growth__content">
-                <p className="home-growth__label">Design System</p>
+                <p className="home-growth__label">System Thinking</p>
 
                 <h3 className="home-growth__item-title">
-                  반복되는 UI 기준을 시스템으로 구조화
+                  반복되는 UI 기준을 토큰과 컴포넌트 구조로 정리
                 </h3>
 
                 <p className="home-growth__description">
-                  컬러, 타이포그래피와 간격을 디자인 토큰으로 정리하고
-                  컴포넌트와 테마로 확장했습니다.
+                 상품 탐색, 필터, 정렬과 장바구니 흐름을 설계하고,
+                 React 기반 환경에서 동작과 반응형 결과를 검수했습니다.
                 </p>
               </div>
 
@@ -118,10 +117,10 @@ function HomePage() {
               <div className="home-growth__number">03</div>
 
               <div className="home-growth__content">
-                <p className="home-growth__label">B2B UX Redesign</p>
+                <p className="home-growth__label">UX Structure</p>
 
                 <h3 className="home-growth__item-title">
-                  정보구조와 사용자 흐름을 실무 문제에 적용
+                  제품 탐색과 검토 흐름을 중심으로 B2B 정보구조 재설계
                 </h3>
 
                 <p className="home-growth__description">
@@ -160,9 +159,10 @@ function HomePage() {
               </p>
 
               <p className="home-about__description">
-                최근에는 React UI 구현과 디자인 시스템 프로젝트를 통해
-                반복되는 기준을 구조화하고, 디자인과 개발 사이의 간극을
-                줄이는 역량을 강화하고 있습니다.
+                최근에는 디자인 시스템과 컴포넌트 기반 UI 프로젝트를 통해
+                반복되는 기준의 구조화를 깊이있게 파악했습니다. 
+                더불어 React 기반 개발 환경에서
+                디자인과 구현 사이의 협업 이해를 넓히고 있습니다.
               </p>
             </div>
 
@@ -179,7 +179,7 @@ function HomePage() {
 
               <div className="home-about__summary-item">
                 <dt>Implementation</dt>
-                <dd>HTML · CSS · React UI</dd>
+                <dd>HTML · CSS · 반응형 퍼블리싱</dd>
               </div>
 
               <div className="home-about__summary-item">
@@ -244,19 +244,16 @@ function HomePage() {
               <p className="home-contact__eyebrow">Contact</p>
 
               <h2 className="home-contact__title">
-                디자인과 구현 사이를 연결하는
-                <br />
-                역할을 찾고 있습니다.
+                디자인과 구현 사이의 품질을 함께 높일 기회를 찾고 있습니다.
               </h2>
 
               <p className="home-contact__description">
-                UI/UX, 디자인 시스템, 반응형 UI와 관련된 포지션에 대해
-                이야기 나누고 싶습니다.
+                디자인 시스템, UI/UX 디자인, 반응형 UI와 디자인–개발 협업 역할에 관심이 있습니다.
               </p>
             </div>
 
             <div className="home-contact__actions">
-            <a
+            {/*<a
               className="home-contact__github"
               href="/resume/hwang-yoonkyung-resume.pdf"
               target="_blank"
@@ -264,7 +261,7 @@ function HomePage() {
             >
               이력서 보기
               <span aria-hidden="true"> ↗</span>
-            </a>
+            </a>*/}
             
               <a
                 className="home-contact__email"

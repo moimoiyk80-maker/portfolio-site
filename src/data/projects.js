@@ -8,8 +8,9 @@ export const projects = [
     summary:
       "회사소개 중심의 연구장비 홈페이지를 제품 탐색과 기술 검토 중심의 B2B 플랫폼으로 재설계했습니다.",
     description:
-      "제품 탐색, 상세 검토, 자료 확인과 문의가 자연스럽게 연결되도록 정보구조와 사용자 흐름을 재구성하고 React로 구현했습니다.",
-    role: "IA · UI/UX · 반응형 UI · React",
+      "제품 탐색, 상세 검토, 자료 확인과 문의가 자연스럽게 연결되도록 정보구조와 사용자 흐름을 재구성하고, React 기반 환경에서 구현 결과를 검수·조정했습니다.",
+    role:
+      "문제 정의 · 정보구조 · UI/UX · 반응형 UI",
     duration: "개인 프로젝트",
     year: "2026",
     accent: "sli",
@@ -40,7 +41,7 @@ export const projects = [
     heroDesktop: "/images/frame/hero-desktop.png",
     heroMobile: "/images/frame/hero-mobile.png",
     projectUrl: "/projects/frame-design-system",
-    liveUrl: "http://frame-design-system.vercel.app/",
+    liveUrl: "https://frame-design-system.vercel.app/",
     githubUrl:
       "https://github.com/moimoiyk80-maker/frame-design-system",
   },
@@ -49,13 +50,13 @@ export const projects = [
     number: "03",
     title: "Minimal Ecommerce",
     subtitle: "상태 기반 반응형 커머스 UI",
-    category: "React UI Implementation",
+    category: "Responsive Commerce UI",
     summary:
-      "상품 탐색과 장바구니 상태가 연결되는 반응형 커머스 UI를 React로 구현했습니다.",
+      "상품 탐색과 장바구니 상태가 자연스럽게 연결되는 반응형 커머스 UI를 설계했습니다.",
     description:
-      "상품 목록, 필터, 정렬, 상세 보기와 장바구니가 하나의 상태 흐름으로 연결되도록 설계하고 반응형 UI로 구현했습니다.",
+      "상품 목록, 필터, 정렬, 상세 보기와 장바구니가 하나의 흐름으로 이어지도록 화면 구조와 인터랙션을 구성했습니다.",
     role:
-      "UI Design · Responsive UI · React Implementation",
+      "UI Design · Interaction Planning · Responsive UI · UI QA",
     duration: "개인 프로젝트",
     year: "2026",
     accent: "minimal",
@@ -63,7 +64,7 @@ export const projects = [
     heroDesktop: "/images/minimal/hero-desktop.png",
     heroMobile: "/images/minimal/hero-mobile.png",
     projectUrl: "/projects/minimal-ecommerce",
-    liveUrl: "http://minimal-ecommerce-psi.vercel.app",
+    liveUrl: "https://minimal-ecommerce-psi.vercel.app",
     githubUrl:
       "https://github.com/moimoiyk80-maker/minimal-ecommerce",
   },

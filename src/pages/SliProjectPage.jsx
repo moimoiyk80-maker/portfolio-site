@@ -24,7 +24,7 @@ function SliProjectPage() {
     {
       label: "Project Scope",
       value:
-        "정보구조 재설계 · UI/UX 디자인 · 반응형 UI · React 구현",
+       "문제 정의 · 정보구조 재설계 · UI/UX 디자인 · 반응형 UI",
     },
     {
       label: "Core Flow",
@@ -37,9 +37,9 @@ function SliProjectPage() {
         "연구장비를 비교하고 기술 정보를 검토하는 B2B 고객",
     },
     {
-      label: "Tools",
+      label: "Design & Environment",
       value:
-        "Figma · React · Vite · React Router · CSS",
+        "Figma · HTML/CSS · React 기반 구현 환경 · GitHub · Vercel",
     },
   ];
 
@@ -202,19 +202,18 @@ function SliProjectPage() {
     "B2B 연구장비 사이트의 문제 정의와 방향 설정",
     "제품 중심 정보구조와 사용자 흐름 설계",
     "전체 페이지 UI/UX와 반응형 화면 설계",
-    "React Router 기반 페이지와 탐색 구조 구현",
-    "검색, 필터, 제품 상세와 문의 상태 연결",
+    "페이지별 콘텐츠 구조와 탐색 기준 정의",
+    "검색, 필터, 제품 상세와 문의 흐름의 동작 검수",
     "디자인 시스템을 활용한 UI 일관성 정리",
   ];
   
   const projectTools = [
     "Figma",
-    "React",
-    "Vite",
-    "React Router",
-    "JavaScript",
-    "HTML",
-    "CSS",
+    "정보구조",
+    "UI/UX 디자인",
+    "반응형 UI",
+    "HTML/CSS",
+    "React 기반 환경",
     "GitHub",
     "Vercel",
   ];

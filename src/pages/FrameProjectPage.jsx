@@ -22,12 +22,12 @@ function FrameProjectPage() {
     {
       label: "Project Scope",
       value:
-        "UI Foundation · Design Tokens · Components · Theme · React UI",
+        "UI Foundation · Design Tokens · Components · States · Theme",
     },
     {
       label: "System Structure",
       value:
-        "Primitive → Semantic → Component → React UI",
+        "Primitive → Semantic → Component → UI Application",
     },
     {
       label: "Application",
@@ -35,9 +35,9 @@ function FrameProjectPage() {
         "독립적인 컴포넌트 설계와 SLI Scientific 화면 적용",
     },
     {
-      label: "Tools",
+      label: "Design & Environment",
       value:
-        "Figma · React · Vite · JavaScript · CSS",
+        "Figma · HTML/CSS · React 기반 구현 환경 · GitHub · Vercel",
     },
   ];
 
@@ -79,10 +79,10 @@ function FrameProjectPage() {
         "Button과 Input 등 컴포넌트에 필요한 속성과 상태를 연결했습니다.",
     },
     {
-      label: "Implementation",
-      title: "React UI",
+      label: "Application",
+      title: "UI Application",
       description:
-        "토큰과 상태 기준을 실제 React 컴포넌트와 테마에 적용했습니다.",
+        "토큰과 상태 기준을 React 기반 화면에 적용하고 브라우저 결과를 검수했습니다.",
     },
   ];
 
@@ -100,7 +100,7 @@ function FrameProjectPage() {
     {
       title: "디자인과 구현 연결",
       description:
-        "Figma의 설계 기준을 실제 React UI에서 확인할 수 있도록 구성했습니다.",
+        "Figma의 설계 기준이 브라우저 화면에서도 일관되게 적용되는지 확인할 수 있도록 구성했습니다.",
     },
   ];
 
@@ -110,7 +110,7 @@ function FrameProjectPage() {
       eyebrow: "Foundations & Tokens",
       title: "시각적 기준을 재사용 가능한 토큰으로 구조화했습니다.",
       description:
-        "컬러, 타이포그래피, 간격과 반경을 개별 화면에 직접 입력하지 않고 공통 기준으로 정의했습니다. 실제 프로젝트에서 사용한 토큰 이름과 계층을 기준으로 디자인과 코드가 같은 의미를 공유하도록 구성했습니다.",
+        "컬러, 타이포그래피, 간격과 반경을 개별 화면에 직접 입력하지 않고 공통 기준으로 정의했습니다. 포트폴리오 프로젝트에서 사용한 토큰 이름과 계층을 기준으로 디자인과 코드가 같은 의미를 공유하도록 구성했습니다.",
       points: [
         "Primitive 값과 Semantic 역할 분리",
         "텍스트, 배경, 테두리와 인터랙션 색상 정의",
@@ -158,13 +158,14 @@ function FrameProjectPage() {
     {
       number: "03",
       eyebrow: "Design to Code",
-      title: "디자인 기준을 실제 React UI에서 확인할 수 있도록 구현했습니다.",
+      title:
+       "디자인 기준을 실제 브라우저 화면에서 검증했습니다.",
       description:
-        "디자인 토큰과 컴포넌트 상태를 CSS 변수와 React 컴포넌트 구조에 반영해 디자인과 구현이 같은 기준을 사용하도록 정리했습니다.",
+       "디자인 토큰과 컴포넌트 상태를 CSS 변수와 React 기반 화면에 적용하고, 설계한 기준이 실제 UI에서 일관되게 표현되는지 검수·조정했습니다.",
       points: [
-        "토큰 값을 CSS 변수로 구성",
-        "컴포넌트의 변형과 상태를 React UI로 구현",
-        "디자인 결과와 브라우저 화면을 함께 검토",
+        "토큰 값을 CSS 변수 구조로 정리",
+        "컴포넌트 변형과 상태의 화면 적용 기준 정의",
+        "디자인 결과와 브라우저 화면 비교 및 수정",
       ],
       image: "/images/frame/design-to-code.png",
       imageAlt: "Frame Design System 디자인과 React UI 연결 화면",
