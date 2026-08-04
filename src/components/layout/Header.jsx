@@ -50,14 +50,14 @@ function Header() {
             연락처
           </a>
 
-          <a
+          {/* <a
             href="/resume/hwang-yoonkyung-resume.pdf"
             className="site-header__resume"
             target="_blank"
             rel="noreferrer"
           >
             이력서
-          </a>
+          </a>*/}
         </nav>
       </Container>
     </header>
