@@ -16,6 +16,12 @@ body {
   a {
     -webkit-tap-highlight-color: transparent;
   }
+
+  a:focus-visible,
+  button:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 4px;
+  }
   
   button {
     cursor: pointer;
