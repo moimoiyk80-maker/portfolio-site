@@ -2,7 +2,7 @@
     min-height: 700px;
     display: flex;
     align-items: center;
-    padding: 96px 0 120px;
+    padding: 40px 0;
     background: var(--color-bg);
   }  
   
@@ -681,6 +681,7 @@
     }
   
     .text-link {
+      width: 100%;
       padding-inline: 4px; 
       justify-content: center;
     }
