@@ -29,9 +29,9 @@ export const projects = [
     subtitle: "디자인 토큰과 컴포넌트 시스템",
     category: "Design System",
     summary:
-      "반복되는 시각 기준을 디자인 토큰과 컴포넌트 원칙으로 체계화한 디자인 시스템 프로젝트입니다.",
+      "반복되는 UI 기준을 디자인 토큰과 컴포넌트 원칙으로 체계화한 디자인 시스템 프로젝트입니다.",
     description:
-      "컬러, 타이포그래피, 간격과 상태 기준을 디자인 토큰으로 정리하고, 컴포넌트와 Light·Dark Theme에 일관되게 적용했습니다.",
+      "컬러, 타이포그래피, 간격과 상태 기준을 디자인 토큰으로 정리하고, 컴포넌트와 Theme에 일관되게 적용했습니다.",
     role:
       "UI Foundation · Design Tokens · Component Guidelines · UI States · Theme · UI Validation",
     duration: "개인 프로젝트",
@@ -54,9 +54,9 @@ export const projects = [
     summary:
       "상품 탐색과 장바구니 상태가 자연스럽게 연결되는 반응형 커머스 UI를 설계했습니다.",
     description:
-      "상품 목록, 필터, 정렬, 상세 확인과 장바구니가 하나의 흐름으로 이어지도록 화면 구조와 인터랙션을 구성했습니다.",
+      "필터와 정렬, 옵션 선택과 상태 피드백을 통해 사용자의 선택 결과가 화면에 명확하게 드러나도록 구성했습니다.",
     role:
-      "UI Design · Interaction Planning · Responsive UI · UI Validation",
+    "UI Design · Interaction Planning · Product Options · Responsive UI · UI Validation",
     duration: "개인 프로젝트",
     year: "2026",
     accent: "minimal",
