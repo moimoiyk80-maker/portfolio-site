@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     padding: 40px 0;
-    background: var(--color-bg);
+    background: var(--color-bg-soft);
   }  
   
   .home-hero__eyebrow {
@@ -267,7 +267,7 @@
 
 .home-growth {
     padding: 144px 0;
-    background: var(--color-surface-subtle);
+    background: var(--color-bg-section);
   }
   
   .home-growth__header {
