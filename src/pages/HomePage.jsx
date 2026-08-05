@@ -21,8 +21,8 @@ function HomePage() {
             </h1>
 
             <p className="home-hero__description">
-             18년 이상의 인하우스 웹디자인, UI/UX와 반응형 퍼블리싱 경험을
-             바탕으로 실제 웹 환경에서 작동하는 디자인을 만들어 왔습니다.
+             18년 이상의 웹디자인, UI/UX와 반응형 퍼블리싱 경험을 바탕으로
+             디자인 의도가 실제 화면까지 일관되게 이어지도록 작업해 왔습니다.
             </p>
 
             <div className="home-hero__actions">
@@ -45,9 +45,9 @@ function HomePage() {
             <h2 className="home-projects__title">주요 프로젝트</h2>
 
             <p className="home-projects__description">
-              UI 구현에서 디자인 시스템 설계와
+              반응형 UI, 디자인 시스템과
               <br />
-              실무형 B2B UX 리디자인으로 확장된 프로젝트입니다.
+              실무형 B2B UX 리디자인으로 확장한 세 프로젝트입니다.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ function HomePage() {
               <div className="home-growth__number">01</div>
 
               <div className="home-growth__content">
-                <p className="home-growth__label">UI Implementation</p>
+                <p className="home-growth__label">UI Design & Publishing</p>
 
                 <h3 className="home-growth__item-title">
                   웹디자인과 HTML/CSS 기반 반응형 퍼블리싱
