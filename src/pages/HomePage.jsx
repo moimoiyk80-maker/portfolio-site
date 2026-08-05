@@ -101,7 +101,7 @@ function HomePage() {
                 <p className="home-growth__label">System Thinking</p>
 
                 <h3 className="home-growth__item-title">
-                  반복되는 UI 기준을 토큰과 컴포넌트 구조로 정리
+                 반복되는 UI 기준을 토큰과 컴포넌트 원칙으로 정리
                 </h3>
 
                 <p className="home-growth__description">
@@ -184,7 +184,7 @@ function HomePage() {
 
               <div className="home-about__summary-item">
                 <dt>Collaboration</dt>
-                <dd>UI 기준 전달 · 구현 결과 검수 · 개발자 협업</dd>
+                <dd>UI 기준 전달 · 브라우저 화면 검수 · 개발자 협업</dd>
               </div>
             </dl>
           </div>

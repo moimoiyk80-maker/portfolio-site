@@ -160,7 +160,7 @@ function FrameProjectPage() {
       eyebrow: "UI Validation",
       title: "디자인 기준을 실제 브라우저 화면에서 검증했습니다.",
       description:
-        "디자인 토큰과 컴포넌트 상태를 브라우저 화면에서 확인하고, 설계한 기준이 실제 UI에 일관되게 표현되도록 HTML/CSS와 화면 결과를 검수·조정했습니다.",
+        "디자인 토큰과 컴포넌트 상태를 브라우저에서 확인하고, 설계한 기준과 실제 UI를 비교하며 HTML/CSS와 화면 스타일을 조정했습니다.",
       points: [
         "토큰 값을 CSS 변수 기준으로 정리",
         "컴포넌트 변형과 상태별 표현 기준 정의",
@@ -244,12 +244,12 @@ function FrameProjectPage() {
 
             <div>
               <h2 className="project-section__title">
-              토큰 기준을 컴포넌트와 실제 화면에 일관되게 적용했습니다.
+                토큰 기준을 컴포넌트와 실제 화면에 일관되게 적용했습니다.
               </h2>
 
               <p className="project-section__description">
-              기초 값을 정의하는 데 그치지 않고, 실제 인터페이스에서
-              반복되는 요소와 상태에 공통된 기준이 적용되도록 정리했습니다.
+                기초 값을 정의하는 데 그치지 않고, 실제 인터페이스에서
+                반복되는 요소와 상태에 공통된 기준이 적용되도록 정리했습니다.
               </p>
             </div>
           </div>

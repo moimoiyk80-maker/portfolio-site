@@ -34,7 +34,7 @@ function SliProjectPage() {
     {
       label: "Target",
       value:
-        "연구장비를 비교하고 기술 정보를 검토하는 B2B 고객",
+      "제품을 비교하고 상세 정보를 검토하는 B2B 고객",
     },
     {
       label: "Design & Environment",
@@ -97,7 +97,7 @@ function SliProjectPage() {
     {
       title: "카테고리 중심",
       description:
-        "브랜드가 아니라 장비 유형과 사용 목적을 기준으로 정보를 분류했습니다.",
+        "브랜드가 아니라 제품 유형과 사용 목적을 기준으로 정보를 분류했습니다.",
     },
     {
       title: "검토에서 문의까지",
@@ -253,7 +253,7 @@ function SliProjectPage() {
 
       <ProjectOverview
         title="제품을 찾고 검토하는 흐름을 중심으로 사이트를 재구성했습니다."
-        description="SLI Scientific은 회사소개 중심의 연구장비 홈페이지를 제품 탐색 중심의 B2B 플랫폼으로 전환한 개인 프로젝트입니다. 제품군을 기준으로 정보를 구조화하고, 상세 검토와 자료 확인, 문의까지 하나의 흐름으로 연결했습니다."
+        description="SLI Scientific은 회사소개 중심의 B2B 사이트를 제품 탐색 중심의 정보 플랫폼으로 재구성한 개인 프로젝트입니다. 제품군을 기준으로 정보를 구조화하고, 상세 검토와 자료 확인, 문의까지 하나의 흐름으로 연결했습니다."
         details={overviewDetails}
       />
 
