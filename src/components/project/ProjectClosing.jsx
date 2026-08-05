@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import Container from "../common/Container";
 
 function ProjectClosing({
-  title = "설계부터 React UI 구현까지 전체 과정을 진행했습니다.",
-  description = "문제 정의와 화면 설계, 구현을 하나의 흐름으로 연결했습니다.",
+  title,
+  description,
   roleItems = [],
   tools = [],
   outcome,
@@ -43,7 +43,7 @@ function ProjectClosing({
             </div>
 
             <div className="project-closing__tools">
-              <h3>Tools & Stack</h3>
+             <h3>Design & Environment</h3>
 
               <ul>
                 {tools.map((tool) => (

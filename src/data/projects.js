@@ -3,14 +3,14 @@ export const projects = [
     id: "sli-scientific",
     number: "01",
     title: "SLI Scientific",
-    subtitle: "B2B 연구장비 플랫폼 리디자인",
+    subtitle: "제품 탐색 중심 B2B 플랫폼 리디자인",
     category: "B2B UX Redesign",
     summary:
-      "회사소개 중심의 연구장비 홈페이지를 제품 탐색과 기술 검토 중심의 B2B 플랫폼으로 재설계했습니다.",
+      "회사소개 중심의 B2B 사이트를 제품 탐색과 상세 정보 검토 중심의 플랫폼으로 재설계했습니다.",
     description:
-      "제품 탐색, 상세 검토, 자료 확인과 문의가 자연스럽게 연결되도록 정보구조와 사용자 흐름을 재구성하고, React 기반 환경에서 구현 결과를 검수·조정했습니다.",
+      "제품 탐색, 상세 검토, 자료 확인과 문의가 자연스럽게 이어지도록 정보구조와 사용자 흐름을 재구성하고, 브라우저에서 주요 화면과 인터랙션을 검수·조정했습니다.",
     role:
-      "문제 정의 · 정보구조 · UI/UX · 반응형 UI",
+      "문제 정의 · 정보구조 · UI/UX · 반응형 UI · UI Validation",
     duration: "개인 프로젝트",
     year: "2026",
     accent: "sli",
@@ -29,11 +29,11 @@ export const projects = [
     subtitle: "디자인 토큰과 컴포넌트 시스템",
     category: "Design System",
     summary:
-      "시각적 기준을 디자인 토큰으로 구조화하고, 일관된 컴포넌트와 테마로 확장했습니다.",
+      "반복되는 시각 기준을 디자인 토큰과 컴포넌트 원칙으로 체계화한 디자인 시스템 프로젝트입니다.",
     description:
-      "컬러, 타이포그래피와 간격을 디자인 토큰으로 구조화하고, 일관된 컴포넌트와 Light·Dark Theme으로 확장했습니다.",
+      "컬러, 타이포그래피, 간격과 상태 기준을 디자인 토큰으로 정리하고, 컴포넌트와 Light·Dark Theme에 일관되게 적용했습니다.",
     role:
-      "UI Foundation · Design Tokens · Component Guidelines · UI States · Theme",
+      "UI Foundation · Design Tokens · Component Guidelines · UI States · Theme · UI Validation",
     duration: "개인 프로젝트",
     year: "2026",
     accent: "frame",
@@ -54,9 +54,9 @@ export const projects = [
     summary:
       "상품 탐색과 장바구니 상태가 자연스럽게 연결되는 반응형 커머스 UI를 설계했습니다.",
     description:
-      "상품 목록, 필터, 정렬, 상세 보기와 장바구니가 하나의 흐름으로 이어지도록 화면 구조와 인터랙션을 구성했습니다.",
+      "상품 목록, 필터, 정렬, 상세 확인과 장바구니가 하나의 흐름으로 이어지도록 화면 구조와 인터랙션을 구성했습니다.",
     role:
-      "UI Design · Interaction Planning · Responsive UI · UI QA",
+      "UI Design · Interaction Planning · Responsive UI · UI Validation",
     duration: "개인 프로젝트",
     year: "2026",
     accent: "minimal",
@@ -68,4 +68,4 @@ export const projects = [
     githubUrl:
       "https://github.com/moimoiyk80-maker/minimal-ecommerce",
   },
-  ];
+];

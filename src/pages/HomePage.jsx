@@ -86,8 +86,8 @@ function HomePage() {
                 </h3>
 
                 <p className="home-growth__description">
-                 상품 탐색, 필터, 정렬과 장바구니 흐름을 설계하고
-                 반응형 환경에서 동작과 화면 결과를 검수했습니다.
+                 웹디자인과 HTML/CSS 퍼블리싱을 바탕으로,
+                 디자인 의도가 다양한 화면 크기에서도 일관되게 이어지도록 작업해 왔습니다.
                 </p>
               </div>
 
@@ -105,8 +105,8 @@ function HomePage() {
                 </h3>
 
                 <p className="home-growth__description">
-                  반복되는 시각 기준을 디자인 토큰과 컴포넌트 상태로 정리하고,
-                  Light·Dark Theme과 UI 사용 원칙으로 확장했습니다.
+                 반복되는 컬러, 간격과 상태 기준을 토큰과 컴포넌트 원칙으로 정리해,
+                 일관된 UI를 유지할 수 있는 체계로 구체화했습니다.
                 </p>
               </div>
 
@@ -124,8 +124,8 @@ function HomePage() {
                 </h3>
 
                 <p className="home-growth__description">
-                  회사소개 중심의 사이트를 제품 탐색, 기술 검토와 문의가
-                  연결되는 B2B 플랫폼으로 재설계했습니다.
+                 회사소개 중심의 구조를 제품 탐색, 상세 정보 검토와 문의가
+                 자연스럽게 이어지는 B2B 사용자 흐름으로 재구성했습니다.
                 </p>
               </div>
 
@@ -141,28 +141,28 @@ function HomePage() {
             <p className="home-about__eyebrow">About</p>
 
             <h2 className="home-about__title">
-              디자인 의도를 구현 가능한 구조로 연결합니다.
+             정보구조부터 실제 화면까지 일관된 UI 기준을 만듭니다.
             </h2>
           </div>
 
           <div className="home-about__body">
             <div className="home-about__introduction">
               <p className="home-about__lead">
-                웹디자인과 UI/UX, 반응형 퍼블리싱을 중심으로
-                18년 이상 실무를 경험했습니다.
+               웹디자인, UI/UX와 반응형 퍼블리싱을 중심으로
+               18년 이상 실무를 이어왔습니다.
               </p>
 
               <p className="home-about__description">
-                초기에는 시각 디자인과 웹사이트 제작을 담당했고, 이후에는
-                다양한 서비스와 콘텐츠의 UI/UX 설계, 반응형 화면 구현,
-                개발자와의 협업까지 업무 범위를 확장했습니다.
+              초기에는 시각 디자인과 웹사이트 제작을 담당했으며,
+              이후 UI/UX 설계, HTML/CSS 기반 반응형 퍼블리싱과
+              개발자 협업까지 업무 범위를 확장했습니다.
               </p>
 
               <p className="home-about__description">
-                최근에는 디자인 시스템과 컴포넌트 기반 UI 프로젝트를 통해
-                반복되는 기준의 구조화를 깊이있게 파악했습니다. 
-                더불어 React 기반 개발 환경에서
-                디자인과 구현 사이의 협업 이해를 넓히고 있습니다.
+              최근에는 개인 프로젝트를 통해 반복되는 UI 기준을
+              디자인 토큰과 컴포넌트 원칙으로 체계화했습니다.
+              React 기반 결과물을 브라우저에서 확인하며,
+              디자인 기준과 실제 화면 사이의 차이를 검수하고 조정했습니다.
               </p>
             </div>
 
@@ -178,13 +178,13 @@ function HomePage() {
               </div>
 
               <div className="home-about__summary-item">
-                <dt>Implementation</dt>
+                <dt>Publishing</dt>
                 <dd>HTML · CSS · 반응형 퍼블리싱</dd>
               </div>
 
               <div className="home-about__summary-item">
                 <dt>Collaboration</dt>
-                <dd>디자인과 개발 사이의 기준 정리 및 협업</dd>
+                <dd>UI 기준 전달 · 구현 결과 검수 · 개발자 협업</dd>
               </div>
             </dl>
           </div>
@@ -207,8 +207,8 @@ function HomePage() {
               <h3>Design System</h3>
 
               <p>
-                반복되는 시각 기준을 토큰과 컴포넌트로 구조화해 일관성과
-                확장성을 높입니다.
+              반복되는 컬러, 간격과 상태 기준을
+              디자인 토큰과 컴포넌트 원칙으로 체계화합니다.
               </p>
             </article>
 
@@ -218,19 +218,19 @@ function HomePage() {
               <h3>Responsive UI</h3>
 
               <p>
-                다양한 화면 크기에서 정보와 기능이 자연스럽게 이어지도록
-                반응형 인터페이스를 구현합니다.
+              화면 크기에 따라 콘텐츠의 우선순위와 배열을 조정하고,
+              HTML/CSS 기반의 반응형 화면으로 구체화합니다.
               </p>
             </article>
 
             <article className="home-about__capability">
               <p className="home-about__capability-number">04</p>
 
-              <h3>Design to Code</h3>
+              <h3>UI Collaboration</h3>
 
               <p>
-                디자인 결과물을 실제 구현 조건과 연결하고, 개발자와 공유할 수
-                있는 명확한 기준으로 정리합니다.
+              디자인 기준과 상태별 요구사항을 명확하게 전달하고,
+              구현된 화면이 의도한 사용자 경험과 일치하는지 검수합니다.
               </p>
             </article>
           </div>
@@ -244,11 +244,12 @@ function HomePage() {
               <p className="home-contact__eyebrow">Contact</p>
 
               <h2 className="home-contact__title">
-                디자인과 구현 사이의 품질을 함께 높일 기회를 찾고 있습니다.
+              일관된 UI 기준과 더 나은 사용자 흐름을 함께 만들고 싶습니다.
               </h2>
 
               <p className="home-contact__description">
-                디자인 시스템, UI/UX 디자인, 반응형 UI와 디자인–개발 협업 역할에 관심이 있습니다.
+              UI/UX, 디자인 시스템과 반응형 퍼블리싱 경험을 바탕으로
+              정보구조와 실제 화면을 함께 다듬는 역할을 찾고 있습니다.
               </p>
             </div>
 
@@ -267,7 +268,7 @@ function HomePage() {
                 className="home-contact__email"
                 href="mailto:hyoonkyung@naver.com"
               >
-                hyoonkyung@naver.com
+                이메일로 연락하기
                 <span aria-hidden="true"> ↗</span>
               </a>
 
