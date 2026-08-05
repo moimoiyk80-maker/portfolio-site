@@ -3,7 +3,7 @@
 UI/UX 디자인, 반응형 퍼블리싱과 디자인 시스템 경험을
 세 개의 프로젝트를 통해 정리한 개인 포트폴리오 사이트입니다.
 
-[Portfolio Site Preview](./public/images/readme/portfolio-home.png)
+![Portfolio Site Preview](./public/images/readme/portfolio-home.png)
 
 ## Project Links
 
