@@ -151,26 +151,79 @@ function SliProjectPage() {
     },
   ];
 
-  const finalUiImages = [
+  const finalUiGroups = [
     {
-      src: "/images/sli/final-home.png",
-      alt: "SLI Scientific 메인 화면",
-      caption: "Home · 제품 탐색 중심의 첫 화면",
+      id: "discovery",
+      number: "01",
+      title: "제품 탐색",
+      description:
+        "검색과 카테고리를 주요 진입점으로 배치해 사용자가 필요한 제품군을 빠르게 좁힐 수 있도록 구성했습니다.",
+      featured: {
+        src: "/images/sli/final-home.png",
+        alt: "SLI Scientific 메인 화면",
+        caption: "Home · 제품 탐색 중심의 첫 화면",
+      },
+      secondary: [
+        {
+          src: "/images/sli/final-products.png",
+          alt: "SLI Scientific 제품 목록 화면",
+          caption: "Products · 검색과 필터",
+        },
+        {
+          src: "/images/sli/final-category.png",
+          alt: "SLI Scientific 제품 카테고리 화면",
+          caption: "Category · 제품군 중심 탐색",
+        },
+      ],
     },
     {
-      src: "/images/sli/final-products.png",
-      alt: "SLI Scientific 제품 목록 화면",
-      caption: "Products · 검색과 필터",
+      id: "review",
+      number: "02",
+      title: "제품 검토",
+      description:
+        "목록에서 제품 상세와 주요 특징으로 이어지는 정보 흐름을 구성해 제품을 단계적으로 검토할 수 있도록 했습니다.",
+      reverse: true,
+      featured: {
+        src: "/images/sli/final-product-detail.png",
+        alt: "SLI Scientific 제품 상세 화면",
+        caption: "Product Detail · 주요 정보와 문의 연결",
+      },
+      secondary: [
+        {
+          src: "/images/sli/final-product-features.png",
+          alt: "SLI Scientific 제품 주요 특징 영역",
+          caption: "Features · 핵심 특징과 장점",
+        },
+        {
+          src: "/images/sli/final-product-gallery.png",
+          alt: "SLI Scientific 제품 이미지 영역",
+          caption: "Gallery · 제품 이미지 확인",
+        },
+      ],
     },
     {
-      src: "/images/sli/final-category.png",
-      alt: "SLI Scientific 제품 카테고리 화면",
-      caption: "Category · 제품군 중심 탐색",
-    },
-    {
-      src: "/images/sli/final-resources.png",
-      alt: "SLI Scientific 자료실 화면",
-      caption: "Resources · 관련 자료 확인",
+      id: "support",
+      number: "03",
+      title: "자료 확인과 문의",
+      description:
+        "관련 자료와 기업 정보를 확인한 뒤, 선택한 제품의 맥락이 문의 단계까지 이어지도록 구성했습니다.",
+      featured: {
+        src: "/images/sli/final-resources.png",
+        alt: "SLI Scientific 자료실 화면",
+        caption: "Resources · 관련 자료 확인",
+      },
+      secondary: [
+        {
+          src: "/images/sli/final-contact.png",
+          alt: "SLI Scientific 문의 화면",
+          caption: "Contact · 제품 정보가 연결된 문의",
+        },
+        {
+          src: "/images/sli/final-about.png",
+          alt: "SLI Scientific 회사 소개 화면",
+          caption: "About · 신뢰 정보를 보완하는 화면",
+        },
+      ],
     },
   ];
   
@@ -315,9 +368,9 @@ function SliProjectPage() {
 
       <ProjectGallery
         eyebrow="Final UI"
-        title="제품 탐색과 상세 검토에 필요한 주요 화면을 일관된 구조로 구성했습니다."
-        description="홈, 제품 목록, 카테고리와 자료실은 서로 다른 목적을 가지지만, 공통된 탐색 기준과 UI 원칙이 이어지도록 설계했습니다."
-        images={finalUiImages}
+        title="제품 탐색부터 상세 검토와 문의까지 주요 화면을 세 단계로 구성했습니다."
+        description="탐색, 검토, 자료 확인과 문의 흐름이 공통된 정보 구조와 UI 기준 안에서 이어지도록 설계했습니다."
+        groups={finalUiGroups}
         accent="sli"
       />
 
