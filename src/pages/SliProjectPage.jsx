@@ -252,12 +252,11 @@ function SliProjectPage() {
   ];
 
   const roleItems = [
-    "제품 정보 중심 B2B 사이트의 문제 정의와 방향 설정",
-    "제품 중심 정보구조와 사용자 흐름 설계",
-    "전체 페이지 UI/UX와 반응형 화면 설계",
-    "페이지별 콘텐츠 구조와 탐색 기준 정의",
-    "검색, 필터, 제품 상세와 문의 흐름의 인터랙션 검수",
-    "디자인 시스템 원칙을 적용한 UI 일관성 정리",
+    "실무에서 관찰한 제품 정보 부족과 개선 방향 제시",
+    "AI와 제품 탐색·상세 검토·자료·문의 흐름 논의",
+    "화면 구성과 기본 Figma 자료 정리",
+    "HTML·CSS 수정 및 반응형 화면 확인",
+    "검색·필터·상세·문의 흐름의 브라우저 검수",
   ];
   
   const projectTools = [
@@ -273,7 +272,7 @@ function SliProjectPage() {
   
   const nextProject = {
     title: "Frame Design System",
-    subtitle: "디자인 토큰과 컴포넌트 시스템",
+    subtitle: "라이브 UI Foundation과 기본 컴포넌트",
     category: "Design System",
     url: "/projects/frame-design-system",
   };
@@ -306,7 +305,7 @@ function SliProjectPage() {
 
       <ProjectOverview
         title="제품을 찾고 검토하는 흐름을 중심으로 사이트를 재구성했습니다."
-        description="SLI Scientific은 회사소개 중심의 B2B 사이트를 제품 탐색 중심의 정보 플랫폼으로 재구성한 개인 프로젝트입니다. 제품군을 기준으로 정보를 구조화하고, 상세 검토와 자료 확인, 문의까지 하나의 흐름으로 연결했습니다."
+        description="SLI Scientific은 실무에서 겪은 제품 정보 부족을 바탕으로 재구성한 개인 프로젝트입니다. 브랜드·제품·화면은 가상으로 구성했습니다. 제품군을 기준으로 정보를 구조화하고, 상세 검토와 자료 확인, 문의까지 하나의 흐름으로 연결했습니다."
         details={overviewDetails}
       />
 
@@ -320,8 +319,8 @@ function SliProjectPage() {
 
       <ProjectGallery
         eyebrow="Design Process"
-        title="전체 탐색 구조를 먼저 확인하고, 주요 화면의 정보 위계를 단계적으로 구체화했습니다."
-        description="로우파이에서는 홈에서 제품군, 카테고리와 제품 상세로 이어지는 전체 흐름을 검토했습니다. 이후 미드파이에서는 각 화면의 콘텐츠 우선순위와 기능 배치를 구체화했습니다."
+        title="전체 탐색 구조와 화면별 정보 배치를 정리했습니다."
+        description="로우파이는 홈·제품군·카테고리·상세로 이어지는 구조를, 미드파이는 화면별 콘텐츠 우선순위와 기능 배치를 보여주는 작업 자료입니다."
         images={processImages}
         accent="sli"
         wideFirst={false}
@@ -382,8 +381,11 @@ function SliProjectPage() {
       />
 
       <ProjectClosing
+        title="실무 문제를 설계 과제로 발전시킨 개인 프로젝트"
+        description="실무에서 관찰한 문제를 바탕으로 AI와 설계안을 논의하고, 화면 검토와 수정을 진행했습니다."
         roleItems={roleItems}
         tools={projectTools}
+        aiSupport={project.aiSupport}
         outcome="회사소개 중심의 구조를 제품 탐색, 상세 검토와 문의가 자연스럽게 이어지는 반응형 B2B 정보 플랫폼으로 재구성했습니다."
         reflection="정보가 많은 B2B 환경에서는 시각적 완성도뿐 아니라, 사용자가 필요한 제품을 찾고 검토할 수 있는 정보구조와 탐색 기준이 중요했습니다. 또한 디자인 시스템의 원칙을 콘텐츠와 사용 맥락에 맞게 조정해 적용했습니다."
         liveUrl={project.liveUrl}

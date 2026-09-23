@@ -882,3 +882,17 @@
         font-size: 19px;
       }
   }
+/* Career evidence and personal-project labels */
+.project-card__type {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+  margin: -6px 0 16px;
+}
+.home-experience__status {
+  margin-top: 12px;
+  color: var(--color-text-primary);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.7;
+}

@@ -1255,7 +1255,11 @@
     grid-template-columns: 1fr;
     gap: 8px;
     padding: 22px 0;
-    border-right: 0;
+    border-right: 0;    
+    }
+
+    .project-overview__detail:nth-child(odd) {
+      border-right: none;
     }
 
     .project-insights__grid {
@@ -1539,3 +1543,19 @@
       gap: 24px;
     }
   }
+/* Clearly separate personal contribution and AI assistance. */
+.project-closing__support {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid var(--color-border);
+}
+.project-closing__support h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+.project-closing__support p {
+  max-width: 800px;
+  margin-top: 8px;
+  color: var(--color-text-secondary);
+  line-height: 1.75;
+}

@@ -6,6 +6,7 @@ function ProjectClosing({
   description,
   roleItems = [],
   tools = [],
+  aiSupport,
   outcome,
   reflection,
   liveUrl,
@@ -52,6 +53,14 @@ function ProjectClosing({
               </ul>
             </div>
           </div>
+
+          {aiSupport && (
+            <div className="project-closing__support">
+              <h3>AI 지원 범위</h3>
+              <p>{aiSupport}</p>
+              <p>개인 프로젝트의 실사용 성과는 측정하지 않았습니다.</p>
+            </div>
+          )}
 
           <div className="project-closing__result">
             <article>

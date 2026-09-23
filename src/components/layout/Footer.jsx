@@ -12,6 +12,8 @@ function Footer() {
           <div className="site-footer__links">
             <a href="/#projects">프로젝트</a>
 
+            <a href="/#experience">실무 경험</a>
+
             <a href="/#about">소개</a>
 
             <a

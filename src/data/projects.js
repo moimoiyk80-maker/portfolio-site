@@ -6,12 +6,13 @@ export const projects = [
     subtitle: "제품 탐색 중심 B2B 플랫폼 리디자인",
     category: "B2B UX Redesign",
     summary:
-      "회사소개 중심의 B2B 사이트를 제품 탐색과 상세 정보 검토 중심의 플랫폼으로 재설계했습니다.",
+      "실무에서 겪은 제품 정보 부족을 바탕으로, 제품 탐색과 검토 중심의 가상 B2B 플랫폼을 구성했습니다.",
     description:
       "제품 탐색, 상세 검토, 자료 확인과 문의가 자연스럽게 이어지도록 정보구조와 사용자 흐름을 재구성하고, 브라우저에서 주요 화면과 인터랙션을 검수·조정했습니다.",
     role:
-      "문제 정의 · 정보구조 · UI/UX · 반응형 UI · UI Validation",
-    duration: "개인 프로젝트",
+      "실무 문제 제시 · AI와 구조·UI 논의 · HTML/CSS 수정 · UI 검수",
+    duration: "개인 프로젝트 · AI 보조 구현",
+    aiSupport: "설계안과 UI 기준을 함께 논의하고, React 기반 구현과 코드 수정안 작성에 AI의 도움을 받았습니다.",
     year: "2026",
     accent: "sli",
     coverImage: "/images/sli/cover.png",
@@ -26,15 +27,16 @@ export const projects = [
     id: "frame-design-system",
     number: "02",
     title: "Frame Design System",
-    subtitle: "디자인 토큰과 컴포넌트 시스템",
-    category: "Design System",
+    subtitle: "라이브 UI Foundation과 기본 컴포넌트",
+    category: "UI Foundation",
     summary:
-      "반복되는 UI기준을 디자인 토큰과 컴포넌트 원칙으로 체계화한 디자인 시스템 프로젝트입니다.",
+      "AI와 기본 스타일과 컴포넌트 상태를 정리한 라이브 UI Foundation입니다. 이후 SLI에 맞춰 기준을 적용·변경했습니다.",
     description:
-      "컬러, 타이포그래피, 간격과 상태 기준을 디자인 토큰으로 정리하고, 컴포넌트와 Light·Dark Theme에 일관되게 적용했습니다.",
+      "AI와 컬러·타이포그래피·간격 및 기본 컴포넌트 상태를 논의하고, 라이브 사이트로 구성했습니다. SLI 제작 과정에서 기본 UI에 적용·변경했습니다.",
     role:
-      "UI Foundation · Design Tokens · Component Guidelines · UI States · Theme",
-    duration: "개인 프로젝트",
+      "컬러 방향 제시 · AI와 UI 기준 논의 · 화면 검수 · SLI 적용",
+    duration: "개인 프로젝트 · AI 보조 구현",
+    aiSupport: "설계안과 UI 기준을 함께 논의하고, React 기반 구현과 코드 수정안 작성에 AI의 도움을 받았습니다.",
     year: "2026",
     accent: "frame",
     coverImage: "/images/frame/cover.png",
@@ -56,8 +58,9 @@ export const projects = [
     description:
       "상품 목록, 필터, 정렬, 상세 확인과 장바구니가 하나의 흐름으로 이어지도록 화면 구조와 인터랙션을 구성했습니다.",
     role:
-      "UI Design · Interaction Planning · Product Options · Responsive UI · UI Validation",
-    duration: "개인 프로젝트",
+      "UI 구성 · AI와 인터랙션 논의 · 반응형 확인 · UI 검수",
+    duration: "개인 프로젝트 · AI 보조 구현",
+    aiSupport: "설계안과 UI 기준을 함께 논의하고, React 기반 구현과 코드 수정안 작성에 AI의 도움을 받았습니다.",
     year: "2026",
     accent: "minimal",
     coverImage: "/images/minimal/cover.png",

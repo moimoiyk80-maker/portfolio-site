@@ -212,13 +212,11 @@ function MinimalProjectPage() {
   ];
 
   const roleItems = [
-    "상품 탐색 흐름과 화면 구조 설계",
-    "카테고리·컬러 필터와 가격 정렬 기준 정의",
-    "적용 조건 칩과 전체 초기화 흐름 설계",
-    "상품 상세의 옵션 선택과 장바구니 흐름 설계",
-    "장바구니와 Empty State 등 상태별 UI 설계",
-    "데스크톱·태블릿·모바일 반응형 화면 설계",
-    "브라우저 동작 검수와 UI 조정",
+    "상품 탐색과 선택 흐름의 UI 구성",
+    "AI와 필터·정렬·옵션 선택 및 상태 피드백 논의",
+    "화면 구성 검토와 HTML·CSS 수정",
+    "데스크톱·태블릿·모바일 화면 확인",
+    "검색 결과·옵션·장바구니 상태 변화 검수",
   ];
   
   const projectTools = [
@@ -315,6 +313,7 @@ function MinimalProjectPage() {
         description="상품 목록, 필터와 정렬, 상세 옵션 선택과 장바구니가 하나의 흐름으로 이어지도록 구성하고, 화면 크기에 맞춰 콘텐츠 배열과 조작 방식을 조정했습니다."
         roleItems={roleItems}
         tools={projectTools}
+        aiSupport={project.aiSupport}
         outcome="상품 탐색 조건과 옵션 선택 결과가 장바구니까지 명확하게 이어지는 반응형 커머스 UI를 구성했습니다."
         reflection="커머스 UI에서는 사용자의 선택과 그 결과가 화면에 명확하게 이어져야 한다는 점을 확인했습니다. 또한 모바일에서는 데스크톱 화면을 단순히 축소하기보다, 콘텐츠의 우선순위와 조작 방식을 터치 환경에 맞게 다시 설계해야 했습니다."
         liveUrl={project.liveUrl}

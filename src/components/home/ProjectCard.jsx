@@ -5,6 +5,7 @@ function ProjectCard({ project, featured = false }) {
     title,
     subtitle,
     category,
+    duration,
     summary,
     role,
     accent,
@@ -24,6 +25,7 @@ function ProjectCard({ project, featured = false }) {
     >
       <div className="project-card__content">
         <p className="project-card__category">{category}</p>
+        <p className="project-card__type">{duration}</p>
 
         <h3 className="project-card__title">{title}</h3>
 

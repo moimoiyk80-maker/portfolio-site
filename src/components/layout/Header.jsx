@@ -42,6 +42,8 @@ function Header() {
             프로젝트
           </Link>
 
+          <Link to="/#experience" onClick={closeMenu}>실무 경험</Link>
+
           <Link to="/#about" onClick={closeMenu}>
             소개
           </Link>
