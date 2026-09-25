@@ -38,11 +38,11 @@ function Header() {
           }`}
           aria-label="주요 메뉴"
         >
+          <Link to="/#experience" onClick={closeMenu}>실무 경험</Link>
+
           <Link to="/#projects" onClick={closeMenu}>
             프로젝트
           </Link>
-
-          <Link to="/#experience" onClick={closeMenu}>실무 경험</Link>
 
           <Link to="/#about" onClick={closeMenu}>
             소개

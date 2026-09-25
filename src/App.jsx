@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import SliProjectPage from "./pages/SliProjectPage";
 import FrameProjectPage from "./pages/FrameProjectPage";
 import MinimalProjectPage from "./pages/MinimalProjectPage";
+import CommercialProjectPage from "./pages/CommercialProjectPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
@@ -13,10 +14,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route
-          path="/projects/sli-scientific"
-          element={<SliProjectPage />}
-        />
+        <Route path="/projects/sli-scientific" element={<SliProjectPage />} />
         <Route
           path="/projects/frame-design-system"
           element={<FrameProjectPage />}
@@ -25,6 +23,7 @@ function App() {
           path="/projects/minimal-ecommerce"
           element={<MinimalProjectPage />}
         />
+        <Route path="/work/commercial-ui" element={<CommercialProjectPage />} />
         <Route path="/404" element={<NotFoundPage />} />
         <Route path="*" element={<Navigate to="/404" replace />} />
       </Routes>

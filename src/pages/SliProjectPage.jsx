@@ -10,11 +10,8 @@ import ResponsiveShowcase from "../components/project/ResponsiveShowcase";
 import ProjectClosing from "../components/project/ProjectClosing";
 import { projects } from "../data/projects";
 
-
 function SliProjectPage() {
-  const project = projects.find(
-    (item) => item.id === "sli-scientific"
-  );
+  const project = projects.find((item) => item.id === "sli-scientific");
 
   if (!project) {
     return null;
@@ -24,22 +21,19 @@ function SliProjectPage() {
     {
       label: "Project Scope",
       value:
-      "문제 정의 · 정보구조 재설계 · UI/UX 디자인 · 반응형 화면 설계 · UI 검수",
+        "문제 정의 · 정보구조 재설계 · UI/UX 디자인 · 반응형 화면 설계 · UI 검수",
     },
     {
       label: "Core Flow",
-      value:
-        "제품 탐색 → 상세 검토 → 자료 확인 → 문의",
+      value: "제품 탐색 → 상세 검토 → 자료 확인 → 문의",
     },
     {
       label: "Target",
-      value:
-      "제품을 비교하고 상세 정보를 검토하는 B2B 고객",
+      value: "제품을 비교하고 상세 정보를 검토하는 B2B 고객",
     },
     {
       label: "Design & Environment",
-      value:
-      "Figma · HTML/CSS · React 기반 환경 · GitHub · Vercel",
+      value: "Figma · HTML/CSS · React 기반 환경 · GitHub · Vercel",
     },
   ];
 
@@ -87,7 +81,7 @@ function SliProjectPage() {
         "선택한 제품과 모델 정보가 문의 화면까지 이어져 같은 내용을 다시 입력하지 않도록 설계했습니다.",
     },
   ];
-  
+
   const iaPrinciples = [
     {
       title: "제품 우선",
@@ -124,7 +118,8 @@ function SliProjectPage() {
     {
       number: "02",
       eyebrow: "Product Review",
-      title: "제품의 특징과 상세 정보를 단계적으로 검토할 수 있도록 구성했습니다.",
+      title:
+        "제품의 특징과 상세 정보를 단계적으로 검토할 수 있도록 구성했습니다.",
       description:
         "대표 제품을 기준으로 주요 특징, 모델 정보, 상세 이미지와 관련 자료의 우선순위를 정리했습니다.",
       points: [
@@ -142,10 +137,10 @@ function SliProjectPage() {
       description:
         "제품 상세에서 문의로 이동할 때 제품군, 제품과 모델 정보가 함께 전달되어 같은 내용을 다시 입력하지 않도록 구성했습니다.",
       points: [
-          "문의 유형과 제품 정보의 자동 반영",
-          "유효하지 않은 정보에 대응하는 기본 문의 상태",
-          "제품 검토에서 문의로 이어지는 맥락 유지",
-        ],
+        "문의 유형과 제품 정보의 자동 반영",
+        "유효하지 않은 정보에 대응하는 기본 문의 상태",
+        "제품 검토에서 문의로 이어지는 맥락 유지",
+      ],
       image: "/images/sli/product-inquiry.png",
       imageAlt: "SLI Scientific 제품 문의 화면",
     },
@@ -226,7 +221,7 @@ function SliProjectPage() {
       ],
     },
   ];
-  
+
   const responsiveImages = [
     {
       device: "desktop",
@@ -253,12 +248,12 @@ function SliProjectPage() {
 
   const roleItems = [
     "실무에서 관찰한 제품 정보 부족과 개선 방향 제시",
-    "AI와 제품 탐색·상세 검토·자료·문의 흐름 논의",
+    "제품 탐색·상세 검토·자료·문의 흐름 설계",
     "화면 구성과 기본 Figma 자료 정리",
     "HTML·CSS 수정 및 반응형 화면 확인",
     "검색·필터·상세·문의 흐름의 브라우저 검수",
   ];
-  
+
   const projectTools = [
     "Figma",
     "정보구조",
@@ -269,7 +264,7 @@ function SliProjectPage() {
     "GitHub",
     "Vercel",
   ];
-  
+
   const nextProject = {
     title: "Frame Design System",
     subtitle: "라이브 UI Foundation과 기본 컴포넌트",
@@ -347,8 +342,8 @@ function SliProjectPage() {
               </h2>
 
               <p className="project-section__description">
-                전체 화면을 나열하기보다 B2B 제품 탐색 과정에서 중요한
-                검색, 상세 검토와 문의 흐름을 중심으로 정리했습니다.
+                전체 화면을 나열하기보다 B2B 제품 탐색 과정에서 중요한 검색,
+                상세 검토와 문의 흐름을 중심으로 정리했습니다.
               </p>
             </div>
           </div>
@@ -382,7 +377,7 @@ function SliProjectPage() {
 
       <ProjectClosing
         title="실무 문제를 설계 과제로 발전시킨 개인 프로젝트"
-        description="실무에서 관찰한 문제를 바탕으로 AI와 설계안을 논의하고, 화면 검토와 수정을 진행했습니다."
+        description="실무에서 관찰한 문제를 바탕으로 정보구조와 UI를 구성하고, 화면 검토와 수정을 진행했습니다."
         roleItems={roleItems}
         tools={projectTools}
         aiSupport={project.aiSupport}
@@ -393,7 +388,6 @@ function SliProjectPage() {
         nextProject={nextProject}
         accent="sli"
       />
-
     </PageLayout>
   );
 }

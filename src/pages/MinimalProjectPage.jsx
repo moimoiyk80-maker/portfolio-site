@@ -11,9 +11,7 @@ import ProjectClosing from "../components/project/ProjectClosing";
 import { projects } from "../data/projects";
 
 function MinimalProjectPage() {
-  const project = projects.find(
-    (item) => item.id === "minimal-ecommerce"
-  );
+  const project = projects.find((item) => item.id === "minimal-ecommerce");
 
   if (!project) {
     return null;
@@ -27,18 +25,15 @@ function MinimalProjectPage() {
     },
     {
       label: "Core Flow",
-      value:
-        "상품 탐색 → 필터·정렬 → 상세 확인 → 장바구니",
+      value: "상품 탐색 → 필터·정렬 → 상세 확인 → 장바구니",
     },
     {
       label: "Interaction",
-      value:
-        "Filter Chips · Product Options · Empty State · Bottom Sheet",
+      value: "Filter Chips · Product Options · Empty State · Bottom Sheet",
     },
     {
       label: "Design & Environment",
-      value:
-        "Figma · HTML/CSS · React 기반 환경 · GitHub · Vercel",
+      value: "Figma · HTML/CSS · React 기반 환경 · GitHub · Vercel",
     },
   ];
 
@@ -139,7 +134,8 @@ function MinimalProjectPage() {
     {
       number: "03",
       eyebrow: "State Feedback",
-      title: "사용자의 선택과 그 결과를 화면에서 명확하게 확인할 수 있도록 했습니다.",
+      title:
+        "사용자의 선택과 그 결과를 화면에서 명확하게 확인할 수 있도록 했습니다.",
       description:
         "필터와 장바구니 변경 결과를 화면에 바로 반영하고, 조건에 맞는 상품이 없을 때는 다음 행동을 안내하는 Empty State를 구성했습니다.",
       points: [
@@ -179,14 +175,14 @@ function MinimalProjectPage() {
       src: "/images/minimal/final-filtered.png",
       alt: "Minimal Ecommerce 필터와 정렬 적용 화면",
       caption: "Filtered Result · 조건 적용 결과",
-    },    
+    },
     {
       src: "/images/minimal/final-empty.png",
       alt: "Minimal Ecommerce 검색 결과 없음 화면",
       caption: "Empty State · 결과 없음과 초기화 안내",
     },
   ];
-  
+
   const responsiveImages = [
     {
       device: "desktop",
@@ -213,12 +209,12 @@ function MinimalProjectPage() {
 
   const roleItems = [
     "상품 탐색과 선택 흐름의 UI 구성",
-    "AI와 필터·정렬·옵션 선택 및 상태 피드백 논의",
+    "필터·정렬·옵션 선택 및 상태 피드백 설계",
     "화면 구성 검토와 HTML·CSS 수정",
     "데스크톱·태블릿·모바일 화면 확인",
     "검색 결과·옵션·장바구니 상태 변화 검수",
   ];
-  
+
   const projectTools = [
     "UI 디자인",
     "인터랙션 설계",
@@ -228,7 +224,7 @@ function MinimalProjectPage() {
     "GitHub",
     "Vercel",
   ];
-  
+
   const nextProject = {
     title: "SLI Scientific",
     subtitle: "제품 탐색 중심 B2B 플랫폼 리디자인",
@@ -270,12 +266,13 @@ function MinimalProjectPage() {
 
             <div>
               <h2 className="project-section__title">
-              탐색 과정에서 사용자의 선택과 결과가 자연스럽게 이어지도록 설계했습니다.
+                탐색 과정에서 사용자의 선택과 결과가 자연스럽게 이어지도록
+                설계했습니다.
               </h2>
 
               <p className="project-section__description">
-              필터와 정렬, 상품 상세, 상태 피드백과 모바일 조작 방식을 중심으로
-              주요 인터랙션을 정리했습니다.
+                필터와 정렬, 상품 상세, 상태 피드백과 모바일 조작 방식을
+                중심으로 주요 인터랙션을 정리했습니다.
               </p>
             </div>
           </div>
@@ -321,7 +318,6 @@ function MinimalProjectPage() {
         nextProject={nextProject}
         accent="minimal"
       />
-
     </PageLayout>
   );
 }

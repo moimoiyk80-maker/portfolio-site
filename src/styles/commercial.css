@@ -1,0 +1,206 @@
+.commercial-page {
+  color: #222222;
+}
+.commercial-intro {
+  padding: 80px 0 64px;
+}
+.commercial-eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  color: #345674;
+  margin: 32px 0 20px;
+}
+.commercial-intro h1 {
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.35;
+  letter-spacing: -0.04em;
+  margin: 0 0 28px;
+}
+.commercial-lead {
+  font-size: 17px;
+  line-height: 1.85;
+  max-width: 860px;
+}
+.commercial-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  border-top: 1px solid #d9dce0;
+  padding-top: 28px;
+  margin: 36px 0 24px;
+}
+.commercial-meta dt {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.commercial-meta dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.85;
+}
+.commercial-note {
+  font-size: 12px !important;
+  color: #626870;
+  line-height: 1.8 !important;
+  margin-top: 20px;
+}
+.commercial-index {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.commercial-index a {
+  color: #244a73;
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.commercial-section {
+  padding: 60px 0 76px;
+  border-top: 1px solid #d9dce0;
+  scroll-margin-top: 90px;
+}
+.commercial-section h2,
+.commercial-end h2 {
+  font-size: clamp(25px, 3vw, 36px);
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+  margin: 0 0 32px;
+}
+.commercial-section h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 24px 0 12px;
+}
+.commercial-section p,
+.commercial-end p {
+  font-size: 15px;
+  line-height: 1.85;
+}
+.commercial-copy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 36px;
+}
+.commercial-process-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+.commercial-evidence {
+  margin: 0 0 28px;
+  min-width: 0;
+}
+.commercial-evidence img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: white;
+}
+.commercial-evidence figcaption {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #626870;
+  padding-top: 12px;
+}
+.commercial-mobile-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-top: 40px;
+}
+.commercial-phone {
+  max-width: 420px;
+  justify-self: center;
+  width: 100%;
+}
+.commercial-phone--checkout {
+  max-width: 330px;
+}
+.commercial-mobile-grid--checkout {
+  margin-top: 70px;
+  padding-top: 50px;
+  border-top: 1px solid #e2e4e6;
+}
+.commercial-end {
+  padding: 65px 0 100px;
+  border-top: 1px solid #d9dce0;
+}
+.commercial-end p {
+  max-width: 760px;
+  margin-bottom: 24px;
+}
+.home-commercial-proof {
+  display: block;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #345674;
+  margin-top: 20px;
+}
+.home-growth__case-link {
+  display: inline-block;
+  margin-top: 28px;
+  color: #244a73;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+@media (max-width: 760px) {
+  .commercial-intro {
+    padding: 48px 0;
+  }
+  .commercial-meta,
+  .commercial-copy-grid,
+  .commercial-process-grid,
+  .commercial-mobile-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .commercial-index {
+    gap: 18px;
+  }
+  .commercial-section {
+    padding: 36px 0 48px;
+  }
+  .commercial-section h2 br,
+  .commercial-intro h1 br {
+    display: none;
+  }
+  .commercial-mobile-grid--checkout {
+    margin-top: 32px;
+    padding-top: 30px;
+  }
+  .commercial-phone {
+    max-width: 416px;
+  }
+  .commercial-phone--checkout {
+    max-width: 330px;
+  }
+  .commercial-lead {
+    font-size: 16px;
+  }
+  .commercial-meta {
+    gap: 22px;
+  }
+  .commercial-end {
+    padding: 44px 0 64px;
+  }
+}
+.commercial-constraint {
+  max-width: 900px;
+  margin: 24px 0 36px;
+  padding-left: 18px;
+  border-left: 2px solid #9cafbf;
+}
+.commercial-constraint strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.commercial-evidence-link { display: block; margin-top: 6px; color: #244a73; text-decoration: underline; text-underline-offset: 3px; }

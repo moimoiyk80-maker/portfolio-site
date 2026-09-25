@@ -1255,12 +1255,12 @@
     grid-template-columns: 1fr;
     gap: 8px;
     padding: 22px 0;
-    border-right: 0;    
+    border-right: 0;
     }
 
     .project-overview__detail:nth-child(odd) {
       border-right: none;
-    }
+  }
 
     .project-insights__grid {
     margin-top: 48px;
