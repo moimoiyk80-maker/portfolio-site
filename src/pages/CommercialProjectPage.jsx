@@ -21,19 +21,19 @@ export default function CommercialProjectPage() {
         <Container>
           <header className="commercial-intro">
             <Link className="text-link" to="/#experience">
-              실무 사례 목록으로
+              실무 사례 목록
             </Link>
             <p className="commercial-eyebrow">
               COMMERCIAL WORK / UI DESIGN & IMPLEMENTATION
             </p>
             <h1>
-              여러 서비스의 UI 기준과
+              공통 UI와 운영 목적에 맞춰
               <br />
-              모바일 정보 구조를 정리한 실무
+              화면을 구성하고 구현한 실무
             </h1>
             <p className="commercial-lead">
-              서비스별 차이를 유지하며 반복 UI를 맞추고, 복잡한 상품 정보를
-              모바일에 맞게 구성했습니다. 화면 디자인과 HTML·CSS를 직접 작업하고
+              서비스별 차이를 유지하며 반복 UI를 맞추고, 복잡한 상품 정보를 모바일에 맞게 구성했습니다. 
+              <br></br>로그인 통합, 상시 특가 영역과 상담 랜딩을 설계하고, 화면 디자인과 HTML·CSS를 직접 작업하며
               개발자와 동작을 조율했습니다.
             </p>
             <dl className="commercial-meta">
@@ -63,13 +63,14 @@ export default function CommercialProjectPage() {
               </div>
             </dl>
             <p className="commercial-note">
-              회사·사이트명은 비공개입니다. 이미지는 실제 사이트의 캡처를 바탕으로
-              식별 정보를 가린 편집본이며, 사례에 필요한 영역만 제시합니다.
+              회사·사이트명은 비공개입니다. 이미지는 식별 정보를 가린 편집본이며, 사례에 필요한 영역만 제시합니다.
             </p>
             <nav className="commercial-index" aria-label="실무 사례 목차">
               <a href="#shared-ui">01 공통 서비스 UI</a>
-              <a href="#mobile-ui">02 모바일 정보 구성</a>
-              <a href="#discount-ui">03 할인 사유 표시</a>
+              <a href="#login-ui">02 로그인 통합</a>
+              <a href="#mobile-ui">03 상품·주문 정보</a>
+              <a href="#discount-ui">04 할인 상품 운영</a>
+              <a href="#consulting-ui">05 상담 랜딩</a>
             </nav>
           </header>
 
@@ -123,8 +124,24 @@ export default function CommercialProjectPage() {
             </p>
           </section>
 
+          <section id="login-ui" className="commercial-section">
+            <p className="commercial-eyebrow">02 / LOGIN CONSISTENCY</p>
+            <h2>분리 운영하던 로그인 화면을<br />공통 구조로 정리했습니다</h2>
+            <div className="commercial-copy-grid">
+              <div><h3>PC·모바일에서 달랐던 진입 경로</h3>
+                <p>데스크톱과 모바일 쇼핑몰을 따로 운영하면서 입력창과 로그인 방법, 회원가입 경로의 배치도 달랐습니다. 반응형 전환에 맞춰 로그인 UI를 공통 구조로 교체했습니다.</p></div>
+              <div><h3>로그인 방법과 다음 행동을 명확하게</h3>
+                <p>입력창 위에 항목명을 두고, 기본 로그인과 소셜 로그인, 회원가입, 비회원 주문조회를 한 화면에 배치했습니다. 화면 구성과 HTML·CSS를 직접 작업했습니다.</p></div>
+            </div>
+            <div className="commercial-login-grid">
+              <Evidence file="login-desktop-before.png" alt="이전 데스크톱 로그인 화면" caption="이전 데스크톱 / 입력창 옆 로그인 버튼과 하단의 계정·소셜 로그인 경로" />
+              <Evidence file="login-mobile-before.png" alt="이전 모바일 로그인 화면" caption="이전 모바일 / 기본 로그인과 계정 찾기·회원가입" />
+              <Evidence file="login-current.png" alt="현재 공통 로그인 UI" caption="현재 공통 UI / 로그인 방법·회원가입·비회원 주문조회 경로" />
+            </div>
+          </section>
+
           <section id="mobile-ui" className="commercial-section">
-            <p className="commercial-eyebrow">02 / RESPONSIVE UI</p>
+            <p className="commercial-eyebrow">03 / RESPONSIVE UI</p>
             <h2>
               길게 나열된 옵션을 묶고,
               <br />
@@ -161,15 +178,15 @@ export default function CommercialProjectPage() {
                   작동합니다.
                 </p>
                 <p className="commercial-note">
-                  이미지는 옵션 일부를 접은 상태입니다.
+                  이미지는 옵션 일부를 접은 상태입니다. 요청한 초기 상태·그룹 간
+                  연동까지 구현됐다는 의미는 아닙니다.
                 </p>
               </div>
-              <Evidence
-                file="options.png"
-                alt="접힌 옵션 그룹과 펼친 상품 정보 블록"
-                caption="현재 모바일 / 접힌 그룹과 열린 그룹의 화면 구성"
-                className="commercial-phone"
-              />
+              <div className="commercial-product-comparison">
+                <Evidence file="product-desktop-fields.png" alt="데스크톱 상품 표의 가격·재고·수량·담기 영역" caption="데스크톱 / 회사·상품 식별정보가 있는 열을 제외한 구매 정보" />
+                <Evidence file="options.png" alt="접힌 옵션 그룹과 펼친 모바일 상품 정보 블록" caption="모바일 / 일부 그룹을 접은 상태의 비식별 편집본" />
+                <p className="commercial-note">서로 다른 상품의 화면이며, 금액이 아닌 정보 배치 방식을 비교합니다. 초기에는 전체 그룹이 열려 있으며 그룹 간 자동 연동은 미반영입니다.</p>
+              </div>
             </div>
             <div className="commercial-mobile-grid commercial-mobile-grid--checkout">
               <div>
@@ -189,27 +206,37 @@ export default function CommercialProjectPage() {
                 <h3>구현 환경에서 이어지는 작업</h3>
                 <p>
                   퍼블리싱 결과를 개발팀에 전달한 뒤에도 React 파일의 화면
-                  구조와 CSS를 수정하고 커밋했습니다.                   
-                  <br></br>운영되는 사이트중 그룹홈페이지는 인수인계받은
+                  구조와 CSS를 수정하고 커밋했습니다. 홈페이지는 인수인계받은
                   절차에 따라 운영 서버 반영까지 담당합니다.
                 </p>
               </div>
-              <Evidence
-                file="checkout.png"
-                alt="상품 정보, 주문금액과 증빙정보를 구분한 모바일 화면"
-                caption="현재 모바일 / 상품·주문금액·증빙정보 영역"
-                className="commercial-phone commercial-phone--checkout"
-              />
+              <div className="commercial-order-comparison">
+                <Evidence file="order-before.png" alt="이전 모바일 주문 정보 배치" caption="이전 / 표와 행 구분 중심" />
+                <Evidence file="order-after.png" alt="현재 모바일 상품·주문금액·증빙정보 구분" caption="현재 / 정보 영역별 구분" />
+                <p className="commercial-note">상품과 주문 조건이 다른 화면입니다. 정보 배치를 비교하며, 이전 화면의 쿠폰은 현재 운영 기능이 아닙니다.</p>
+              </div>
             </div>
           </section>
 
           <section id="discount-ui" className="commercial-section">
-            <p className="commercial-eyebrow">03 / PRODUCT INFORMATION</p>
+            <p className="commercial-eyebrow">04 / PRODUCT EXPOSURE & INFORMATION</p>
             <h2>
-              할인율과 함께
+              할인 상품의 노출 방식과
               <br />
-              할인 사유도 확인할 수 있도록 제안했습니다
+              구매 판단 정보를 개선했습니다
             </h2>
+            <div className="commercial-case-part">
+              <h3>쇼핑몰 · 이벤트 상품을 메인에서 상시 노출</h3>
+              <p className="commercial-status">현재 운영 중</p>
+              <div className="commercial-copy-grid">
+                <div><h4>기존 운영에서 찾은 개선점</h4><p>영업팀은 장기 재고 상품을 매번 이벤트 방식으로 판매했습니다. 리뉴얼 과정에서 이벤트 배너 공간을 별도로 차지하지 않고 상품을 지속적으로 노출하도록 ‘스페셜가격’ 전용 영역을 제안했습니다.</p></div>
+                <div><h4>제안부터 화면 적용까지</h4><p>웹·모바일 UI 구성과 HTML·CSS를 직접 작업했습니다. 제안한 영역은 실제 서비스에 반영되어 현재 운영 중입니다.</p></div>
+              </div>
+              <Evidence file="special-price.png" alt="메인 스페셜가격 영역의 상품 카드와 할인율, 특가 상품 더보기" caption="메인 특가 영역 / 회사·상품 식별정보를 가린 캡처 기반 편집 이미지" />
+            </div>
+            <div className="commercial-case-part">
+              <h3>중고판매 서비스 · 할인율에 상품별 사유 추가</h3>
+              <p className="commercial-status">운영 반영 중</p>
             <div className="commercial-copy-grid">
               <div>
                 <h3>실무자 요청에 더한 정보</h3>
@@ -238,6 +265,18 @@ export default function CommercialProjectPage() {
               진행 중인 사례입니다. 반영 완료 후의 이용 성과나 구매 전환 개선은
               측정하지 않았습니다.
             </p>
+            </div>
+          </section>
+          <section id="consulting-ui" className="commercial-section">
+            <p className="commercial-eyebrow">05 / CONSULTATION LANDING</p>
+            <h2>상담 신청 목적에 맞춰<br />원페이지 랜딩을 제안했습니다</h2>
+            <div className="commercial-copy-grid">
+              <div><h3>목적에 맞는 페이지 구성</h3><p>담당자가 구성 방향을 정하기 어려워하던 상황에서, 상담을 받는 목적에 맞춰 원페이지 랜딩을 추천했습니다. 사업 소개와 제품 안내, 컨설팅 절차를 순서대로 구성하고 마지막에 상담 요청 버튼을 배치했습니다.</p></div>
+              <div><h3>직접 제작하고 실제 운영</h3><p>페이지 구성·디자인·퍼블리싱을 직접 담당했으며 제안한 형태로 제작해 한동안 운영했습니다. 이후 회사 방침에 따라 다른 상담 경로로 전환해 현재는 해당 페이지를 운영하지 않습니다.</p></div>
+            </div>
+            <Evidence file="consult-process.png" alt="접수부터 상담·제안·검토·계약·설치·유지보수까지의 컨설팅 절차" caption="페이지 내 컨설팅 절차 안내 / 원본 시안에서 발췌" />
+            <Evidence file="consult-cta.png" alt="페이지 하단의 상담 요청하기 버튼" caption="페이지 하단 / 상담 요청으로 연결하는 버튼" className="commercial-consult-cta" />
+            <p className="commercial-note">상단 메인과 회사 식별정보는 제외하고 해당 영역만 발췌했습니다. 상담 전환 성과는 측정하지 않았습니다.</p>
           </section>
           <footer className="commercial-end">
             <h2>

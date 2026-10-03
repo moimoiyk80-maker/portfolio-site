@@ -3,25 +3,11 @@ import "../../styles/commercial.css";
 import Container from "../common/Container";
 
 const cases = [
-  {
-    title: "서비스 사이트의 공통 UI와 안내 표현",
-    description:
-      "서비스 4~5개의 컬러·버튼·헤더·푸터를 맞췄습니다. AS·교정·렌탈의 절차를 유지하면서 단계·아이콘·설명에 공통 표현을 적용했습니다.",
-    scope: "공통 기준 · 서비스별 차이",
-  },
-  {
-    title: "모바일 옵션과 상품·주문 정보 구성",
-    description:
-      "옵션을 그룹으로 묶고, PC의 표 정보를 모바일 상품 블록으로 재배치했습니다. 화면 구성과 반응형 HTML·CSS를 직접 작업하고 세부 동작은 개발자와 조율했습니다.",
-    scope: "UI 구성 · 반응형 구현",
-  },
-  {
-    title: "중고상품 할인율과 할인 사유 표시",
-    description:
-      "할인율 강조 요청에 더해 할인 사유도 표시하도록 제안했습니다. 운영자가 사진 등 정보를 바꿀 수 있도록 필요한 관리자 항목을 요청했습니다.",
-    scope: "정보 설계 · 운영 협업",
-    status: "할인 사유 표시 개선은 운영 반영 중입니다.",
-  },
+  { title: "서비스 사이트의 공통 UI와 안내 표현", description: "서비스 4~5개의 컬러·버튼·헤더·푸터를 맞추고, AS·교정·렌탈의 절차에 맞춰 단계·아이콘·설명을 구성했습니다.", scope: "공통 기준 · 서비스별 차이", anchor: "shared-ui" },
+  { title: "PC·모바일 로그인 UI 통합", description: "따로 운영하던 로그인 화면을 반응형 전환에 맞춰 정리했습니다. 로그인 방법·회원가입·비회원 주문조회 경로를 배치하고 HTML·CSS를 직접 작업했습니다.", scope: "UI 공통화 · 구현", anchor: "login-ui" },
+  { title: "상품 선택과 주문 정보의 반응형 구성", description: "옵션을 그룹으로 묶고 PC 표를 모바일 상품 블록으로 재배치했습니다. 주문 정보도 영역별로 구분하고, 세부 동작은 개발자와 조율했습니다.", scope: "정보 구조 · 반응형 구현", anchor: "mobile-ui" },
+  { title: "특가 상시 노출과 할인 사유 표시", description: "이벤트로 판매하던 상품의 메인 상시 영역을 제안해 운영에 적용했습니다. 별도 중고판매 서비스에는 할인 사유 표시와 관리자 입력 항목을 제안했습니다.", scope: "운영 개선 · 정보 설계", status: "특가 영역은 운영 중이며, 중고상품 할인 사유 표시는 반영 중입니다.", anchor: "discount-ui" },
+  { title: "상담 목적의 원페이지 랜딩", description: "상담 신청을 목적으로 원페이지 구성을 제안하고 디자인·퍼블리싱을 직접 담당했습니다. 실제 운영 후 회사 방침에 따라 다른 상담 경로로 전환했습니다.", scope: "페이지 구성 · 퍼블리싱", anchor: "consulting-ui" },
 ];
 
 export default function CommercialExperience() {
@@ -39,8 +25,9 @@ export default function CommercialExperience() {
               실무에서 맡은 UI 기준과 운영 개선
             </h2>
             <p className="home-growth__description">
-              2014년부터 홈페이지·쇼핑몰·서비스 사이트의 화면 디자인과 퍼블리싱을 담당했습니다. 
-              <br></br>회사·사이트명은 비공개이며, 직접 판단하고 수행한 범위를 정리했습니다.
+              2014년부터 홈페이지·쇼핑몰·서비스 사이트의 화면 디자인과
+              퍼블리싱을 담당했습니다. 회사·사이트명은 비공개이며, 직접 판단하고
+              수행한 범위를 정리했습니다.
             </p>
           </div>
         </div>
@@ -51,7 +38,7 @@ export default function CommercialExperience() {
                 {String(index + 1).padStart(2, "0")}
               </span>
               <div className="home-growth__content">
-                <h3 className="home-growth__item-title">{item.title}</h3>
+                <h3 className="home-growth__item-title"><Link className="commercial-home-case-link" to={`/work/commercial-ui#${item.anchor}`}>{item.title}<span aria-hidden="true"> ↗</span></Link></h3>
                 <p className="home-growth__description">{item.description}</p>
                 {item.status && (
                   <p className="home-experience__status">{item.status}</p>
