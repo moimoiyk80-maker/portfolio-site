@@ -1,3 +1,4 @@
+import UiEvidence from "../components/project/UiEvidence";
 import PageLayout from "../components/layout/PageLayout";
 import ProjectHero from "../components/project/ProjectHero";
 import ProjectOverview from "../components/project/ProjectOverview";
@@ -356,6 +357,44 @@ function SliProjectPage() {
                 reverse={index % 2 === 1}
               />
             ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="ui-proof" id="component-application">
+        <Container>
+          <header className="ui-proof__header">
+            <p className="project-section__eyebrow">Component Structure & Application</p>
+            <h2 className="project-section__title">설계 과정에서 만든 컴포넌트를 화면에 활용했습니다.</h2>
+            <p>Frame의 기본 기준을 참고하고, 로우파이·하이파이 화면을 설계하면서 SLI에 필요한 버튼과 카드를 구성했습니다. 컬러는 딥블루로 조정하고 모서리 반경은 8px 기준을 적용했습니다.</p>
+          </header>
+          <div className="ui-proof__group">
+            <h3>버튼 · 역할과 배경, 상태 구분</h3>
+            <p>Type은 Primary·Secondary, Theme은 Light·Dark, State는 Default·Disabled로 구분했습니다. 필요한 5개 베리언트 조합을 구성했습니다.</p>
+            <div className="ui-proof__grid">
+              <UiEvidence file="sli-variants.jpg" alt="SLI Figma 버튼 컴포넌트 세트의 5개 베리언트" caption="Figma · 필요한 버튼 조합" compact />
+              <UiEvidence file="sli-button-properties.jpg" alt="버튼 Type Theme State 속성 설정" caption="Figma · 역할·배경·상태 속성" compact />
+            </div>
+            <p>밝은 배경에서는 딥블루 채움과 외곽선을 사용하고, 어두운 배경에서는 밝은 외곽선과 흰색 채움으로 버튼을 표현했습니다.</p>
+            <div className="ui-proof__grid">
+              <UiEvidence file="sli-buttons-light.jpg" alt="밝은 SLI 메인 영역의 제품 찾기와 문의 버튼" caption="밝은 배경 · 딥블루 채움과 외곽선" />
+              <UiEvidence file="sli-buttons-dark.jpg" alt="어두운 SLI 탐색 영역의 외곽선 버튼" caption="어두운 배경 · 밝은 외곽선" />
+            </div>
+            <UiEvidence file="sli-buttons-cta.jpg" alt="어두운 문의 안내 영역의 흰색 버튼" caption="어두운 배경 · 문의와 자료 확인 버튼" compact />
+          </div>
+          <div className="ui-proof__group">
+            <h3>카드 · 내용 교체와 버튼 표시 설정</h3>
+            <p>이미지·제목·설명·정보 영역·버튼을 묶었습니다. 제목과 설명은 텍스트 속성으로, 이미지는 교체 가능한 인스턴스로 구성하고 버튼 표시 여부는 Boolean 속성으로 조절합니다.</p>
+            <div className="ui-proof__grid">
+              <UiEvidence file="sli-card-structure.png" alt="이미지 제목 설명 사양 버튼으로 구성한 Figma 카드 레이어" caption="Figma · 카드의 기본 구조" />
+              <UiEvidence file="sli-card-properties.jpg" alt="텍스트 이미지 교체 버튼 표시 여부를 조절하는 카드 속성" caption="Figma · 내용과 표시 여부를 조절하는 속성" />
+            </div>
+            <h3>용도에 맞춘 카드 적용</h3>
+            <p>공통 시각 기준을 유지하면서 제품 카드에는 주요 사양과 상세 진입을, 카테고리 카드에는 분류 설명과 탐색 정보를 배치했습니다.</p>
+            <div className="ui-proof__grid">
+              <UiEvidence file="sli-product-card.jpg" alt="제품 이미지와 주요 사양 상세 진입을 담은 SLI 카드" caption="제품 카드 · 사양과 상세 진입" />
+              <UiEvidence file="sli-category-card.jpg" alt="실험기구 카테고리의 설명과 상품군 정보를 담은 SLI 카드" caption="카테고리 카드 · 분류 탐색" />
+            </div>
           </div>
         </Container>
       </section>

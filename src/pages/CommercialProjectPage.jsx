@@ -1,3 +1,4 @@
+import UiEvidence from "../components/project/UiEvidence";
 import { Link } from "react-router-dom";
 import Container from "../components/common/Container";
 import PageLayout from "../components/layout/PageLayout";
@@ -21,7 +22,7 @@ export default function CommercialProjectPage() {
         <Container>
           <header className="commercial-intro">
             <Link className="text-link" to="/#experience">
-              실무 사례 목록
+              실무 사례 목록으로
             </Link>
             <p className="commercial-eyebrow">
               COMMERCIAL WORK / UI DESIGN & IMPLEMENTATION
@@ -32,8 +33,8 @@ export default function CommercialProjectPage() {
               화면을 구성하고 구현한 실무
             </h1>
             <p className="commercial-lead">
-              서비스별 차이를 유지하며 반복 UI를 맞추고, 복잡한 상품 정보를 모바일에 맞게 구성했습니다. 
-              <br></br>로그인 통합, 상시 특가 영역과 상담 랜딩을 설계하고, 화면 디자인과 HTML·CSS를 직접 작업하며
+              서비스별 차이를 유지하며 반복 UI를 맞추고, 복잡한 상품 정보를
+              모바일에 맞게 구성했습니다. 로그인 통합, 상시 특가 영역과 상담 랜딩을 설계하고, 화면 디자인과 HTML·CSS를 직접 작업하며
               개발자와 동작을 조율했습니다.
             </p>
             <dl className="commercial-meta">
@@ -63,14 +64,16 @@ export default function CommercialProjectPage() {
               </div>
             </dl>
             <p className="commercial-note">
-              회사·사이트명은 비공개입니다. 이미지는 식별 정보를 가린 편집본이며, 사례에 필요한 영역만 제시합니다.
+              회사·사이트명은 비공개입니다. 이미지는 업무 캡처를 바탕으로
+              식별 정보를 가린 편집본이며, 사례에 필요한 영역만 제시합니다.
             </p>
             <nav className="commercial-index" aria-label="실무 사례 목차">
               <a href="#shared-ui">01 공통 서비스 UI</a>
-              <a href="#login-ui">02 로그인 통합</a>
-              <a href="#mobile-ui">03 상품·주문 정보</a>
-              <a href="#discount-ui">04 할인 상품 운영</a>
-              <a href="#consulting-ui">05 상담 랜딩</a>
+              <a href="#shared-css">02 공통 버튼 CSS</a>
+              <a href="#login-ui">03 로그인 통합</a>
+              <a href="#mobile-ui">04 상품·주문 정보</a>
+              <a href="#discount-ui">05 할인 상품 운영</a>
+              <a href="#consulting-ui">06 상담 랜딩</a>
             </nav>
           </header>
 
@@ -85,8 +88,7 @@ export default function CommercialProjectPage() {
               <div>
                 <h3>반복되는 화면의 기준</h3>
                 <p>
-                  서비스 사이트 4~5개의 기본 컬러와 버튼, 헤더·푸터를
-                  맞췄습니다. 각 서비스의 로고와 실제 업무 절차는 유지했습니다.
+                  본사·자회사별 컬러를 구분하고 서비스 사이트 4~5개의 버튼, 헤더·푸터 표현을 정리했습니다. 각 서비스의 로고와 실제 업무 절차는 유지했습니다.
                 </p>
               </div>
               <div>
@@ -124,8 +126,29 @@ export default function CommercialProjectPage() {
             </p>
           </section>
 
+          <section id="shared-css" className="commercial-section ui-proof">
+            <p className="commercial-eyebrow">02 / SHARED CSS</p>
+            <h2>공통 버튼 클래스로<br />색상 변경을 일괄 반영했습니다</h2>
+            <div className="commercial-copy-grid">
+              <div><h3>초기 판단 · UI의 색상 사용 절제</h3><p>상품 이미지와 콘텐츠에 브랜드 블루가 많이 사용돼, 주요 버튼에는 다크 컬러 #1F2937을 적용했습니다. 주요·보조 버튼의 스타일을 공통 클래스로 나눠 관리했습니다.</p></div>
+              <div><h3>변경 대응 · 브랜드 색상 적용</h3><p>브랜드 색상 적용 요청에 따라 .Abut의 배경색을 #007AC1로 수정했습니다. 해당 클래스를 사용하는 버튼에 변경 사항을 한 번에 반영했습니다. .Bbut는 보조 버튼의 스타일입니다.</p></div>
+            </div>
+            <div className="ui-proof__grid">
+              <UiEvidence file="button-before.jpg" alt="다크 컬러의 기존 담기 버튼" caption="변경 전 · #1F2937" compact />
+              <UiEvidence file="button-after.jpg" alt="브랜드 블루를 적용한 담기 버튼" caption="변경 후 · #007AC1" compact />
+            </div>
+            <h3>직접 작성한 공통 CSS</h3>
+            <UiEvidence file="button-css.jpg" alt="Abut와 Bbut로 주요·보조 버튼 스타일을 관리한 실제 CSS" caption="실제 클래스명 유지 · .Abut 주요 버튼 / .Bbut 보조 버튼" compact />
+            <h3>다른 화면의 적용 모습</h3>
+            <div className="ui-proof__grid ui-proof__grid--three">
+              <UiEvidence file="button-more.jpg" alt="목록 더보기 버튼" caption="목록 더보기" compact />
+              <UiEvidence file="button-event.jpg" alt="진행 중인 이벤트와 종료된 이벤트 버튼" caption="이벤트 전환" compact />
+              <UiEvidence file="button-document.jpg" alt="인증서와 사용설명서 버튼" caption="자료 확인" compact />
+            </div>
+          </section>
+
           <section id="login-ui" className="commercial-section">
-            <p className="commercial-eyebrow">02 / LOGIN CONSISTENCY</p>
+            <p className="commercial-eyebrow">03 / LOGIN CONSISTENCY</p>
             <h2>분리 운영하던 로그인 화면을<br />공통 구조로 정리했습니다</h2>
             <div className="commercial-copy-grid">
               <div><h3>PC·모바일에서 달랐던 진입 경로</h3>
@@ -141,7 +164,7 @@ export default function CommercialProjectPage() {
           </section>
 
           <section id="mobile-ui" className="commercial-section">
-            <p className="commercial-eyebrow">03 / RESPONSIVE UI</p>
+            <p className="commercial-eyebrow">04 / RESPONSIVE UI</p>
             <h2>
               길게 나열된 옵션을 묶고,
               <br />
@@ -219,7 +242,7 @@ export default function CommercialProjectPage() {
           </section>
 
           <section id="discount-ui" className="commercial-section">
-            <p className="commercial-eyebrow">04 / PRODUCT EXPOSURE & INFORMATION</p>
+            <p className="commercial-eyebrow">05 / PRODUCT EXPOSURE & INFORMATION</p>
             <h2>
               할인 상품의 노출 방식과
               <br />
@@ -268,7 +291,7 @@ export default function CommercialProjectPage() {
             </div>
           </section>
           <section id="consulting-ui" className="commercial-section">
-            <p className="commercial-eyebrow">05 / CONSULTATION LANDING</p>
+            <p className="commercial-eyebrow">06 / CONSULTATION LANDING</p>
             <h2>상담 신청 목적에 맞춰<br />원페이지 랜딩을 제안했습니다</h2>
             <div className="commercial-copy-grid">
               <div><h3>목적에 맞는 페이지 구성</h3><p>담당자가 구성 방향을 정하기 어려워하던 상황에서, 상담을 받는 목적에 맞춰 원페이지 랜딩을 추천했습니다. 사업 소개와 제품 안내, 컨설팅 절차를 순서대로 구성하고 마지막에 상담 요청 버튼을 배치했습니다.</p></div>

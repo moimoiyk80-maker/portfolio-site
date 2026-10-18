@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import UiEvidence from "../components/project/UiEvidence";
 import PageLayout from "../components/layout/PageLayout";
 import Container from "../components/common/Container";
 import ProjectHero from "../components/project/ProjectHero";
@@ -79,12 +81,12 @@ export default function FrameProjectPage() {
       <ProjectOverview
         eyebrow="Design Decision"
         title="Primary 컬러로 경쾌한 인상을 주고자 했습니다."
-        description="Minimal Ecommerce와 SLI의 차분한 인상과 구분해, Frame에는 경쾌한 리듬을 적용했습니다. 이 방향을 Primary 컬러 선택에 반영했습니다."
+        description="Minimal Ecommerce와 SLI의 차분한 인상과 구분해, Frame에는 경쾌한 리듬이 필요하다고 판단했습니다. 이 방향을 Primary 컬러 선택에 반영했습니다."
       />
       <ProcessFlow
         eyebrow="Work Process"
         title="Frame 작업에서 SLI 적용까지"
-        description="Frame의 라이브 작업을 먼저 진행하고, 후속 SLI 제작 과정에서 기본 UI를 적용·변경하며 Figma 자료를 정리했습니다."
+        description="Frame의 라이브 작업 이후, SLI의 로우파이·하이파이 화면 설계 과정에서 필요한 컴포넌트를 만들고 활용했습니다."
         items={workFlow}
         accent="frame"
       />
@@ -139,24 +141,19 @@ export default function FrameProjectPage() {
         accent="frame"
         wideFirst={false}
       />
-      <section className="project-key-ux project-key-ux--frame-application">
+      <section className="ui-proof" id="sli-application">
         <Container>
-          <div className="project-key-ux__list">
-            <ImageFeature
-              number="03"
-              eyebrow="SLI Application"
-              title="SLI의 기본 UI에 맞춰 적용·변경했습니다."
-              description="SLI에는 딥블루를 사용하고, Frame을 참고해 버튼·입력창과 검색 영역 등 기본 UI를 정리했습니다. 이 과정에서 SLI에 필요한 Foundation과 기본 컴포넌트를 Figma에 정리했습니다."
-              points={[
-                "SLI에 맞춘 브랜드 컬러 변경",
-                "버튼·입력창·검색 영역의 기본 구성",
-                "SLI의 기본 Figma 자료 정리",
-              ]}
-              image="/images/frame/application-sli.png"
-              imageAlt="Frame의 기준을 참고하고 변경한 SLI 화면"
-              accent="frame"
-            />
+          <header className="ui-proof__header">
+            <p className="project-section__eyebrow">Frame to SLI</p>
+            <h2 className="project-section__title">Frame 기준을 SLI 화면에 맞춰 조정했습니다.</h2>
+            <p>Frame의 버튼 역할과 형태를 참고하고, SLI의 딥블루 컬러와 화면 배경에 맞게 조정했습니다. 모서리 반경은 8px 기준을 적용했습니다.</p>
+          </header>
+          <div className="ui-proof__grid">
+            <UiEvidence file="frame-buttons.png" alt="Frame의 주요·보조 버튼과 크기·상태 예시" caption="Frame · 버튼 역할과 크기, 상태 구분" />
+            <UiEvidence file="frame-radius.png" alt="Frame의 Radius 기준 8px 14px 20px" caption="Frame Radius 기준 · SLI에는 8px 적용" />
           </div>
+          <p>SLI의 로우파이·하이파이 화면을 설계하면서 필요한 버튼과 카드를 만들고 활용했습니다. 버튼은 역할·배경·상태별로 구분하고, 카드는 내용 교체와 버튼 표시 여부를 조절하도록 구성했습니다.</p>
+          <Link className="ui-proof__link" to="/projects/sli-scientific#component-application">SLI의 컴포넌트 설정과 적용 화면 보기 →</Link>
         </Container>
       </section>
       <ProjectClosing
